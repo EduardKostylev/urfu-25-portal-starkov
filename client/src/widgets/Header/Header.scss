@@ -1,44 +1,50 @@
 .header {
+
     /* Стили для блока header */
-  &__main {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 40px;
-    height: 80px;
-  }
-  
-  &__main-left {
-    display: flex;
-    align-items: center;
-    gap: 3rem;
-  }
-  
-  &__main-left-link {
-    /* Стили для ссылки внутри левой части главного блока */
-  }
-  
-  &__main-left-link-logo {
-    /* Стили для логотипа внутри ссылки */
-  }
-  
-  &__search {
-    border-radius: 8px;
-  }
-  
-  &__main-right {
-    display: flex;
-    align-items: center;
-    gap: 3rem;
-  }
-  
-  &__main-right-links {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
-  
-  &__nav {
-    /* Стили для навигации */
-  }
+    &__main {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 40px;
+        height: 80px;
+
+
+        &-left {
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+
+
+            &-link {
+                /* Стили для ссылки внутри левой части главного блока */
+
+                &-logo {
+                    /* Стили для логотипа внутри ссылки */
+                }
+            }
+        }
+    }
+
+
+
+
+    &__search {
+        border-radius: 8px;
+    }
+
+    &__main-right {
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    &__main-right-links {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    &__nav {
+        /* Стили для навигации */
+    }
 }
