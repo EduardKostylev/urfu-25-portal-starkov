@@ -5,8 +5,12 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 0 40px;
-        height: 80px;
+        padding: 0 2.5rem;
+        height: 5rem;
+
+        @media (width < 500px) {
+            padding: 0 1rem;
+        }
 
 
         &-left {
@@ -14,9 +18,34 @@
             align-items: center;
             gap: 3rem;
 
+            @media (width < 500px) {
+                gap: 0.5rem
+            }
+
+
+            &__nav-sidebar {
+                display: none;
+
+                @media (width < 500px) {
+                    display: block;
+                }
+
+                &__menu-icon {}
+
+                &__link {
+                    width: 100%;
+                    padding: 0.4rem 0.5rem;
+                }
+            }
+
 
             &-link {
                 /* Стили для ссылки внутри левой части главного блока */
+
+                @media (width < 580px) {
+                    display: none;
+                }
+
 
                 &-logo {
                     /* Стили для логотипа внутри ссылки */
@@ -26,25 +55,74 @@
     }
 
 
-
-
     &__search {
-        border-radius: 8px;
+        border-radius: 0.5rem;
     }
+
 
     &__main-right {
         display: flex;
         align-items: center;
-        gap: 3rem;
+        gap: 1.5rem;
+
+        @media (width < 600px) {
+            gap: 0.5rem
+        }
+
+        &-links {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+
+            @media (width < 600px) {
+                gap: 0.1rem;
+            }
+
+            @media (width < 450px) {
+                display: none;
+            }
+        }
     }
 
-    &__main-right-links {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-    }
 
     &__nav {
         /* Стили для навигации */
+
+        @media (width < 500px) {
+            display: none;
+        }
+
+
+        &__container {
+            gap: 2rem;
+
+            @media (width < 655px) {
+                gap: 1.5rem;
+            }
+
+            @media (width < 540px) {
+                gap: 0.8rem;
+            }
+        }
+
+
+        &__btn {
+            padding: 0;
+
+            &__link--active {
+                border-bottom: 2px solid #000;
+            }
+
+            &--active span {
+                border-bottom: 2px solid #000;
+            }
+        }
+
+        &__link {
+            width: 100%;
+            padding: 6px 8px;
+        }
+
+
     }
 }
