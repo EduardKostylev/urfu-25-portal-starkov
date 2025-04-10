@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './Header.scss'
 import { Input, InputGroup, IconButton, Avatar, Box, Flex, Button, Menu, Portal } from "@chakra-ui/react"
 import { Link } from 'react-router-dom';
-import { ColorModeButton } from '../../components/ui/color-mode';
+import { ColorModeButton, useColorMode } from '../../components/ui/color-mode';
 
 import { LuSearch } from "react-icons/lu"
 import { FaVk } from "react-icons/fa";
@@ -14,11 +14,14 @@ import { IoIosArrowForward } from "react-icons/io";
 import useHeader from '../../app/stores/useHeader';
 
 
+
 export default function Header() {
     const { activeTab, setActiveTab } = useHeader();
     const [isActiveCalendarTab, setIsActiveCalendarTab] = useState(false);
     const [isActiveDevelopmentTab, setIsActiveDevelopmentTab] = useState(false);
     const [isActiveCommunicationTab, setIsActiveCommunicationTab] = useState(false);
+
+    const { colorMode } = useColorMode();
 
     return (
         <header className="header">
@@ -29,7 +32,7 @@ export default function Header() {
                     <div className='header__main-left__nav-sidebar'>
                         <Menu.Root size='sm'>
                             <Menu.Trigger asChild>
-                                <Button variant='default'>
+                                <Button variant='default' p='0'>
                                     <FiMenu className='header__main-left__nav-sedibar__menu-icon' />
                                 </Button>
                             </Menu.Trigger>
@@ -160,16 +163,16 @@ export default function Header() {
                 </div>
             </Box>
 
-            <Box py='1.5rem' px='2rem' className="header__nav">
+            <Box className="header__nav">
 
                 <Flex justify='space-between' wrap='wrap' align='center' className='header__nav__container'>
 
-                    <Button variant='default' className='header__nav__btn' onClick={() => setActiveTab('main')} >
-                        <Link to='/' className={`header__nav__btn__link ${activeTab === 'main' && 'header__nav__btn__link--active'}`}>ГЛАВНАЯ</Link>
+                    <Button variant='default' className='header__nav__btn' onClick={() => setActiveTab('main')}>
+                        <Link to='/' className={`header__nav__btn__link ${activeTab === 'main' && 'header__nav__btn__link--active'}`} style={{ borderBottom: activeTab === 'main' && `2px solid ${colorMode === 'dark' ? '#fff' : "#000"}` }}>ГЛАВНАЯ</Link>
                     </Button>
 
                     <Button variant='default' className='header__nav__btn' onClick={() => setActiveTab('news')}>
-                        <Link to='/news' className={`header__nav__btn__link ${activeTab === 'news' && 'header__nav__btn__link--active'}`}>НОВОСТИ</Link>
+                        <Link to='/news' className={`header__nav__btn__link ${activeTab === 'news' && 'header__nav__btn__link--active'}`} style={{ borderBottom: activeTab === 'news' && `2px solid ${colorMode === 'dark' ? '#fff' : "#000"}` }}>НОВОСТИ</Link>
                     </Button>
 
 
@@ -177,14 +180,14 @@ export default function Header() {
 
                         <Menu.Trigger asChild>
                             <Button variant='default' className={`header__nav__btn ${activeTab === 'calendar' && 'header__nav__btn--active'}`} >
-                                <span>КАЛЕНДАРЬ</span> {!isActiveCalendarTab ? <IoIosArrowDown /> : <IoIosArrowUp />}
+                                <span style={{ borderBottom: activeTab === 'calendar' && `2px solid ${colorMode === 'dark' ? '#fff' : "#000"}` }}>КАЛЕНДАРЬ</span> {!isActiveCalendarTab ? <IoIosArrowDown /> : <IoIosArrowUp />}
                             </Button>
                         </Menu.Trigger>
 
                         <Menu.Positioner>
                             <Menu.Content borderRadius='xl' >
                                 <Menu.Item value='personal-calendar' onClick={() => setActiveTab('calendar')} p='0'>
-                                    <Link className='header__nav__link' to='/personal_calendar'>Календарь личное</Link>
+                                    <Link className='header__nav__link' to='/personal_calendar' >Календарь личное</Link>
                                 </Menu.Item>
 
                                 <Menu.Item value='company-calendar' onClick={() => setActiveTab('calendar')} p='0'>
@@ -204,7 +207,7 @@ export default function Header() {
 
                         <Menu.Trigger asChild>
                             <Button variant='default' className={`header__nav__btn ${activeTab === 'development' && 'header__nav__btn--active'}`}>
-                                <span>РАЗВИТИЕ</span> {!isActiveDevelopmentTab ? <IoIosArrowDown /> : <IoIosArrowUp />}
+                                <span style={{ borderBottom: activeTab === 'development' && `2px solid ${colorMode === 'dark' ? '#fff' : "#000"}` }}>РАЗВИТИЕ</span> {!isActiveDevelopmentTab ? <IoIosArrowDown /> : <IoIosArrowUp />}
                             </Button>
                         </Menu.Trigger>
 
@@ -227,21 +230,21 @@ export default function Header() {
                     </Menu.Root>
 
                     <Button variant='default' className='header__nav__btn' onClick={() => setActiveTab('workers')}>
-                        <Link to='/workers' className={`header__nav__btn__link ${activeTab === 'workers' && 'header__nav__btn__link--active'}`} >СОТРУДНИКИ</Link>
+                        <Link to='/workers' className={`header__nav__btn__link ${activeTab === 'workers' && 'header__nav__btn__link--active'}`} style={{ borderBottom: activeTab === 'workers' && `2px solid ${colorMode === 'dark' ? '#fff' : "#000"}` }}>СОТРУДНИКИ</Link>
                     </Button>
 
                     <Menu.Root size='md' open={isActiveCommunicationTab} onOpenChange={() => setIsActiveCommunicationTab(!isActiveCommunicationTab)} >
 
                         <Menu.Trigger asChild>
                             <Button variant='default' className={`header__nav__btn ${activeTab === 'communication' && 'header__nav__btn--active'}`}>
-                                <span>ОБЩЕНИЕ</span> {!isActiveCommunicationTab ? <IoIosArrowDown /> : <IoIosArrowUp />}
+                                <span style={{ borderBottom: activeTab === 'communication' && `2px solid ${colorMode === 'dark' ? '#fff' : "#000"}` }}>ОБЩЕНИЕ</span> {!isActiveCommunicationTab ? <IoIosArrowDown /> : <IoIosArrowUp />}
                             </Button>
                         </Menu.Trigger>
 
                         <Menu.Positioner>
                             <Menu.Content borderRadius='xl' >
                                 <Menu.Item value='forum-communication' onClick={() => setActiveTab('communication')} p='0'>
-                                    <Link className='header__nav__link' to='/forum_communication'>Форум</Link>
+                                    <Link className='header__nav__link' to='/forum_communication' >Форум</Link>
                                 </Menu.Item>
 
                                 <Menu.Item value='communication-communication' onClick={() => setActiveTab('communication')} p='0'>
@@ -254,11 +257,11 @@ export default function Header() {
                     </Menu.Root>
 
                     <Button variant='default' className='header__nav__btn' onClick={() => setActiveTab('services')}>
-                        <Link to='/services' className={`header__nav__btn__link ${activeTab === 'services' && 'header__nav__btn__link--active'}`}>СЕРВИСЫ</Link>
+                        <Link to='/services' className={`header__nav__btn__link ${activeTab === 'services' && 'header__nav__btn__link--active'}`} style={{ borderBottom: activeTab === 'services' && `2px solid ${colorMode === 'dark' ? '#fff' : "#000"}` }}>СЕРВИСЫ</Link>
                     </Button>
 
                 </Flex>
             </Box>
-        </header>
+        </header >
     )
 }

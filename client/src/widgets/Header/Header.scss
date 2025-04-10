@@ -30,7 +30,9 @@
                     display: block;
                 }
 
-                &__menu-icon {}
+                &__menu-icon {
+                    size: 2rem;
+                }
 
                 &__link {
                     width: 100%;
@@ -87,6 +89,7 @@
 
     &__nav {
         /* Стили для навигации */
+        padding: 1.5rem 2rem;
 
         @media (width < 500px) {
             display: none;
@@ -96,12 +99,13 @@
         &__container {
             gap: 2rem;
 
-            @media (width < 655px) {
-                gap: 1.5rem;
+            @media (width < 900px) {
+                row-gap: 1rem;
             }
 
             @media (width < 540px) {
                 gap: 0.8rem;
+                row-gap: 0.5rem
             }
         }
 
@@ -109,13 +113,9 @@
         &__btn {
             padding: 0;
 
-            &__link--active {
-                border-bottom: 2px solid #000;
-            }
+            &__link--active {}
 
-            &--active span {
-                border-bottom: 2px solid #000;
-            }
+            &--active span {}
         }
 
         &__link {
