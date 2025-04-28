@@ -66,7 +66,7 @@ export default function Navbar() {
 
                 </Menu.Root>
 
-
+                {/* 
                 <Menu.Root size='md' open={isActiveDevelopmentTab} onOpenChange={() => setIsActiveDevelopmentTab(!isActiveDevelopmentTab)} >
 
                     <Menu.Trigger asChild>
@@ -99,7 +99,11 @@ export default function Navbar() {
                         </Menu.Content>
                     </Menu.Positioner>
 
-                </Menu.Root>
+                </Menu.Root> */}
+
+                <Button variant='default' className='header__nav__btn'>
+                    <Link to='/development' className={`header__nav__btn__link ${pathname === '/development' && 'header__nav__btn__link--active'}`} style={{ borderBottom: pathname === '/development' && `2px solid ${colorMode === 'dark' ? '#fff' : "#000"}` }}>РАЗВИТИЕ</Link>
+                </Button>
 
                 <Button variant='default' className='header__nav__btn'>
                     <Link to='/workers' className={`header__nav__btn__link ${pathname === '/workers' && 'header__nav__btn__link--active'}`} style={{ borderBottom: pathname === '/workers' && `2px solid ${colorMode === 'dark' ? '#fff' : "#000"}` }}>СОТРУДНИКИ</Link>

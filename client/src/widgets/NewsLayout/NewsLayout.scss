@@ -1,0 +1,11 @@
+.news-layout {
+    display: grid;
+    grid-template-columns: 1.7fr 0.8fr;
+    gap: 1.175rem;
+
+    padding: 1.25rem 2.5rem;
+
+    &__left {}
+
+    &__right {}
+}

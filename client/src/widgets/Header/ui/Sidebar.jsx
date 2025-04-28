@@ -50,7 +50,7 @@ export default function Sidebar() {
                                 </Portal>
                             </Menu.Root>
 
-                            <Menu.Root positioning={{ placement: 'right-start', gutter: 2 }} size='sm'>
+                            {/* <Menu.Root positioning={{ placement: 'right-start', gutter: 2 }} size='sm'>
                                 <Menu.TriggerItem p='0'>
                                     <span className='header__main-left__nav-sidebar__link' >РАЗВИТИЕ</span> <IoIosArrowForward />
                                 </Menu.TriggerItem>
@@ -72,7 +72,11 @@ export default function Sidebar() {
                                         </Menu.Content>
                                     </Menu.Positioner>
                                 </Portal>
-                            </Menu.Root>
+                            </Menu.Root> */}
+
+                            <Menu.Item value='main' p='0'>
+                                <Link to='/development' className='header__main-left__nav-sidebar__link'>РАЗВИТИЕ</Link>
+                            </Menu.Item>
 
                             <Menu.Item value='workers' p='0'>
                                 <Link to='/workers' className='header__main-left__nav-sidebar__link' >СОТРУДНИКИ</Link>

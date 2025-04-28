@@ -1,0 +1,37 @@
+.general-news {
+    &__title {
+        font-size: 1.5rem;
+        font-weight: 800;
+        margin-bottom: 0.5rem;
+    }
+
+    &__user-meta {
+        margin-bottom: 0.5rem;
+
+        h3 {
+            font-size: 1rem;
+            font-weight: 400;
+        }
+
+        p {
+            color: grey;
+            font-size: 0.8rem;
+
+        }
+    }
+
+    &__news-img {
+        margin-bottom: 0.5rem;
+        width: 50rem;
+
+    }
+
+    &__description {
+        font-size: 1.125rem;
+        font-weight: 400;
+        padding: 0.5rem 0;
+    }
+
+
+
+}

@@ -26,9 +26,7 @@ function App() {
           <Route path='company_calendar' element={<Calendar variant='company' />} />
           <Route path='meeting_calendar' element={<Calendar variant='meeting' />} />
 
-          <Route path='information_development' element={<Development variant='information' />} />
-          <Route path='training_development' element={<Development variant='training' />} />
-          <Route path='documents_development' element={<Development variant='documents' />} />
+          <Route path='development' element={<Development />} />
 
           <Route path='workers' element={<Workers />} />
 
