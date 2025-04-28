@@ -1,6 +1,6 @@
-import { Box, Button, Flex, Image, Text } from '@chakra-ui/react';
 import './MainNews.scss';
 import { useState } from 'react';
+import { Box, Button, Flex, Image, Text } from '@chakra-ui/react';
 
 export default function MainNews() {
     const [isTextFull, setIsTextFull] = useState(false);

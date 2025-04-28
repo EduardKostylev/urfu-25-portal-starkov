@@ -1,4 +1,4 @@
-import './Header.scss'
+import './ui/Header.scss'
 import { Input, InputGroup, IconButton, Avatar, Box, Flex, Button, Menu, Portal } from "@chakra-ui/react"
 import { Link } from 'react-router-dom';
 import { ColorModeButton } from '../../components/ui/color-mode';
@@ -29,7 +29,7 @@ export default function Header() {
                             alt="logo"
                         />
                     </Link>
-                    <InputGroup className="header__search" flex="1" endElement={<LuSearch />} >
+                    <InputGroup className="header__main-left__search" flex="1" endElement={<LuSearch />} >
                         <Input placeholder="Поиск" />
                     </InputGroup>
                 </div>

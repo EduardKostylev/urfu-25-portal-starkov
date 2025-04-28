@@ -1,0 +1,15 @@
+.main-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8rem;
+    padding: 1.25rem 2.5rem;
+
+    @media (width < 1050px) {
+        gap: 5rem;
+    }
+
+    @media (width < 800px) {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
