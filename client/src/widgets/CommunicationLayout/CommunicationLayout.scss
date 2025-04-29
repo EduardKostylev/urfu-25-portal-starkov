@@ -1,0 +1,8 @@
+.communication-layout {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+
+    &__chats-sidebar {}
+
+    &__chat {}
+}

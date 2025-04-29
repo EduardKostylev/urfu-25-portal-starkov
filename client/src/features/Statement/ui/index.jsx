@@ -38,7 +38,6 @@ export default function Statement() {
 
                 <Select.Root collection={applications} size="sm" className='statement__form__select' onValueChange={(evt) => setTypeApplication(evt.items)} required>
                     <Select.HiddenSelect />
-                    {/* <Select.Label>Select framework</Select.Label> */}
                     <Select.Control>
                         <Select.Trigger>
                             <Select.ValueText placeholder="Заявка в отдел" />
@@ -62,19 +61,16 @@ export default function Statement() {
                 </Select.Root>
 
                 <Field.Root className='statement__form__input' required>
-                    {/* <Field.Label>Email</Field.Label> */}
                     <Input placeholder="Тема" value={theme} onChange={(evt) => setTheme(evt.target.value)} />
                     <Field.ErrorText>This field is required</Field.ErrorText>
                 </Field.Root>
 
                 <Field.Root className='statement__form__input' required>
-                    {/* <Field.Label>Email</Field.Label> */}
                     <Input placeholder="Описание" value={description} onChange={(evt) => setDescription(evt.target.value)} />
                     <Field.ErrorText>This field is required</Field.ErrorText>
                 </Field.Root>
 
                 <Field.Root className='statement__form__input' required>
-                    {/* <Field.Label>Email</Field.Label> */}
                     <Input placeholder="Почта" value={mail} onChange={(evt) => setMail(evt.target.value)} />
                     <Field.ErrorText>This field is required</Field.ErrorText>
                 </Field.Root>

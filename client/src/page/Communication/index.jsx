@@ -1,7 +1,9 @@
-import React from 'react'
+import CommunicationLayout from '../../widgets/CommunicationLayout'
 
-export default function Communication() {
+export default function Communication({ variant }) {
     return (
-        <div className='communication'>Communication</div>
+        <>
+            {variant === 'communication' && <CommunicationLayout />}
+        </>
     )
 }
