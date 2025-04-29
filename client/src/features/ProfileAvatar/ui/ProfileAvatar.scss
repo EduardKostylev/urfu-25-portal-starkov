@@ -1,0 +1,22 @@
+.profile-avatar {
+
+    &__avatar {
+        width: 550px;
+        height: 550px;
+        margin-bottom: 1rem;
+    }
+
+    &__fullname {
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    &__post {
+        font-size: 1.5rem;
+        font-weight: 500;
+        line-height: 2rem;
+        color: #9EA0A1;
+    }
+}

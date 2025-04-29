@@ -1,0 +1,22 @@
+.profile-form {
+    text-align: center;
+
+    &__form {
+
+        &__input {
+            width: 20rem;
+            color: #A0C0AA;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 100%;
+            margin-bottom: 2.5rem;
+            border: 1px solid #E2E8F0;
+        }
+
+        &__bnt {
+            font-size: 1.25rem;
+            font-weight: 700;
+            line-height: 1.75rem;
+        }
+    }
+}
