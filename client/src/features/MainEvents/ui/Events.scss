@@ -9,9 +9,12 @@
     &__list {
 
         &__item {
-            display: flex;
+            // display: flex;
+            // flex-wrap: nowrap;
+
+            display: grid;
+            grid-template-columns: 1fr 6fr;
             gap: 0.5rem;
-            flex-wrap: nowrap;
             margin-bottom: 1.5rem;
 
             &:last-child {
