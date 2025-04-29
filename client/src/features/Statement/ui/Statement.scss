@@ -1,0 +1,36 @@
+.statement {
+    padding: 1rem;
+    text-align: center;
+
+    &__title {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+        font-weight: 700;
+        margin-bottom: 0.75rem;
+    }
+
+    &__title-form {
+        font-size: 1.25rem;
+        font-weight: 700;
+        line-height: 1.75rem;
+        margin-bottom: 0.75rem;
+
+    }
+
+    &__form {
+
+        &__select {
+            width: 20rem;
+            margin-bottom: 0.5rem;
+        }
+
+        &__input {
+            margin-bottom: 0.5rem;
+
+            &:last-of-type {
+                margin-bottom: 1rem;
+            }
+        }
+
+    }
+}
