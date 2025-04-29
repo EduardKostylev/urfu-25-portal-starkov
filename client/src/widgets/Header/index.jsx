@@ -1,6 +1,6 @@
 import './ui/Header.scss'
 import { Input, InputGroup, IconButton, Avatar, Box, Flex, Button, Menu, Portal } from "@chakra-ui/react"
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { ColorModeButton } from '../../components/ui/color-mode';
 
 import { LuSearch } from "react-icons/lu"
@@ -12,7 +12,7 @@ import Navbar from './ui/Navbar';
 
 
 export default function Header() {
-
+    const navigate = useNavigate();
     return (
         <header className="header">
             <Box className="header__main">
@@ -49,7 +49,7 @@ export default function Header() {
                         </IconButton>
                     </div>
                     <ColorModeButton />
-                    <Avatar.Root>
+                    <Avatar.Root onClick={() => navigate('/profile')}>
                         <Avatar.Fallback name="Segun Adebayo" />
                         <Avatar.Image src="#" />
                     </Avatar.Root>

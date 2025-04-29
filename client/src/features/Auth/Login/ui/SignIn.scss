@@ -1,3 +1,61 @@
 .sign-in {
-    background: linear-gradient(to bottom, #1E7245, #38A169);
+    background: #1E7245;
+    background: linear-gradient(322deg, rgba(30, 114, 69, 1) 15%, rgba(98, 224, 157, 1) 59%, rgba(30, 114, 69, 1) 96%);
+
+    // background-size: 200% 200%;
+    // animation: gradient 6s ease infinite;
+
+    height: 100vh;
+
+    &__title {
+        color: #fff;
+        font-size: 2.25rem;
+        font-weight: 800;
+        line-height: 2.5rem;
+        margin-bottom: 2.5rem;
+
+    }
+
+    &__input {
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 100%;
+        background-color: #fff;
+        padding: 0.625rem 1rem;
+        border: 1px solid #E2E8F0;
+        margin-bottom: 2.5rem;
+
+        box-shadow: 0 4px 3.5px 0 rgba(0, 0, 0, 0.25);
+    }
+
+    &__btn {
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: 2rem;
+        background-color: #38A169;
+        box-shadow: 0 4px 3.5px 0 rgba(0, 0, 0, 0.25);
+        padding: 0.5rem 1.5rem;
+        transition: all 300ms ease;
+        color: #fff;
+        border-radius: 0.375rem;
+
+        &:hover {
+            cursor: pointer;
+            background-color: #328b5c;
+        }
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
