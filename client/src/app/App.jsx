@@ -9,6 +9,7 @@ import Development from '../page/Development/index';
 import Workers from '../page/Workers/index';
 import Communication from '../page/Communication/index';
 import Services from '../page/Services/index';
+import Profile from '../page/Profile';
 
 function App() {
 
@@ -34,6 +35,8 @@ function App() {
           <Route path='communication_communication' element={<Communication variant='communication' />} />
 
           <Route path='services' element={<Services />} />
+
+          <Route path='profile' element={<Profile />} />
         </Route>
       </Routes>
 

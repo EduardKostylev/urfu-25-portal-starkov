@@ -1,5 +1,5 @@
-import { Select, createListCollection, Portal, Input, Field, Button } from '@chakra-ui/react';
 import './Statement.scss';
+import { Select, createListCollection, Portal, Input, Field, Button } from '@chakra-ui/react';
 import { useState } from 'react';
 
 const applications = createListCollection({
@@ -36,7 +36,7 @@ export default function Statement() {
 
             <form className='statement__form' onSubmit={onHandleSubmit}>
 
-                <Select.Root collection={applications} size="sm" className='statement__form__select' onValueChange={(evt) => setTypeApplication(evt.items)}>
+                <Select.Root collection={applications} size="sm" className='statement__form__select' onValueChange={(evt) => setTypeApplication(evt.items)} required>
                     <Select.HiddenSelect />
                     {/* <Select.Label>Select framework</Select.Label> */}
                     <Select.Control>
@@ -61,21 +61,21 @@ export default function Statement() {
                     </Portal>
                 </Select.Root>
 
-                <Field.Root className='statement__form__input'>
+                <Field.Root className='statement__form__input' required>
                     {/* <Field.Label>Email</Field.Label> */}
-                    <Input placeholder="Тема" value={theme} onChange={(evt) => setTheme(evt.value)} />
+                    <Input placeholder="Тема" value={theme} onChange={(evt) => setTheme(evt.target.value)} />
                     <Field.ErrorText>This field is required</Field.ErrorText>
                 </Field.Root>
 
-                <Field.Root className='statement__form__input'>
+                <Field.Root className='statement__form__input' required>
                     {/* <Field.Label>Email</Field.Label> */}
-                    <Input placeholder="Описание" value={description} onChange={(evt) => setDescription(evt.value)} />
+                    <Input placeholder="Описание" value={description} onChange={(evt) => setDescription(evt.target.value)} />
                     <Field.ErrorText>This field is required</Field.ErrorText>
                 </Field.Root>
 
-                <Field.Root className='statement__form__input'>
+                <Field.Root className='statement__form__input' required>
                     {/* <Field.Label>Email</Field.Label> */}
-                    <Input placeholder="Почта" value={mail} onChange={(evt) => setMail(evt.value)} />
+                    <Input placeholder="Почта" value={mail} onChange={(evt) => setMail(evt.target.value)} />
                     <Field.ErrorText>This field is required</Field.ErrorText>
                 </Field.Root>
 
