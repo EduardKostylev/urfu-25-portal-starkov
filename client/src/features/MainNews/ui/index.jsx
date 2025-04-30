@@ -9,7 +9,7 @@ export default function MainNews() {
         <Box className='main-news'>
             <h1 className='main-news__title'>Заголовок H1</h1>
 
-            <Image width='full' src='../../../public/main-news.png' className='main-news__img' />
+            <Image width='full' src='public/main-news.png' className='main-news__img' />
 
             <Text className='main-news__description' lineClamp={isTextFull ? 'full' : '2'}>Кульминацией вечера стало выступление популярной российской группы “Звездный Дождь”, которая
                 исполнила свои главные хиты и новые композиции. Публика с восторгом подпевала знакомые песни,

@@ -9,7 +9,7 @@ export default function NewsSidebar() {
                 <li className='news-sidebar__news-list__item'>
                     <h3 className='news-sidebar__news-list__item__title'>Заголовок Новости</h3>
 
-                    <Image className='news-sidebar__news-list__item__news-img' src='../../../../public/main-news.png' />
+                    <Image className='news-sidebar__news-list__item__news-img' src='public/main-news.png' />
 
                     <Text className='news-sidebar__news-list__item__description' lineClamp='2'>Кульминацией вечера стало выступление популярной российской группы “Звездный Дождь”, которая
                         исполнила свои главные хиты и новые композиции. Публика с восторгом подпевала знакомые песни,
@@ -20,7 +20,7 @@ export default function NewsSidebar() {
                 <li className='news-sidebar__news-list__item'>
                     <h3 className='news-sidebar__news-list__item__title'>Заголовок Новости</h3>
 
-                    <Image className='news-sidebar__news-list__item__news-img' src='../../../../public/main-news.png' />
+                    <Image className='news-sidebar__news-list__item__news-img' src='public/main-news.png' />
 
                     <Text className='news-sidebar__news-list__item__description' lineClamp='2'>Кульминацией вечера стало выступление популярной российской группы “Звездный Дождь”, которая
                         исполнила свои главные хиты и новые композиции. Публика с восторгом подпевала знакомые песни,
@@ -31,7 +31,7 @@ export default function NewsSidebar() {
                 <li className='news-sidebar__news-list__item'>
                     <h3 className='news-sidebar__news-list__item__title'>Заголовок Новости</h3>
 
-                    <Image className='news-sidebar__news-list__item__news-img' src='../../../../public/main-news.png' />
+                    <Image className='news-sidebar__news-list__item__news-img' src='public/main-news.png' />
 
                     <Text className='news-sidebar__news-list__item__description' lineClamp='2'>Кульминацией вечера стало выступление популярной российской группы “Звездный Дождь”, которая
                         исполнила свои главные хиты и новые композиции. Публика с восторгом подпевала знакомые песни,

@@ -20,7 +20,7 @@ export default function GeneralNews() {
                 </div>
             </Flex>
 
-            <Image className='general-news__news-img' src='../../../../public/main-news.png' />
+            <Image className='general-news__news-img' src='public/main-news.png' />
 
             <Text className='general-news__description' lineClamp={isTextFull ? 'full' : '2'}>Кульминацией вечера стало выступление популярной российской группы “Звездный Дождь”, которая
                 исполнила свои главные хиты и новые композиции. Публика с восторгом подпевала знакомые песни,

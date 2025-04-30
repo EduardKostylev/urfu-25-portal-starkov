@@ -7,25 +7,34 @@ import { fileURLToPath } from 'url'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '', // Важно для устранения ./
   build: {
     outDir: 'dist',
     rollupOptions: {
-      input: {
-        main: resolve(fileURLToPath(new URL('.', import.meta.url)), 'index.html')
+      output: {
+        assetFileNames: 'assets/[name]-[hash][extname]',
+        entryFileNames: 'assets/[name]-[hash].js'
       }
     }
   },
+  plugins: [
+    react(),
+    {
+      name: 'copy-public-folder',
+      enforce: 'post', // Гарантирует выполнение после других плагинов
+      closeBundle: async () => {
+        try {
+          const rootDir = fileURLToPath(new URL('.', import.meta.url))
+          const source = resolve(rootDir, 'public')
+          const destination = resolve(rootDir, 'dist/public')
 
-  plugins: [react(),
-  {
-    name: 'copy-public-folder',
-    closeBundle: async () => {
-      const rootDir = fileURLToPath(new URL('.', import.meta.url))
-      await copy(
-        resolve(rootDir, 'public'),
-        resolve(rootDir, 'dist/public')
-      )
+          console.log(`Копирование из ${source} в ${destination}`)
+          await copy(source, destination)
+          console.log('Копирование public завершено')
+        } catch (error) {
+          console.error('Ошибка копирования public:', error)
+        }
+      }
     }
-  }
-  ],
+  ]
 })
