@@ -1,0 +1,10 @@
+FROM liferay/portal:7.4.3.112-ga112
+
+# Копируем OSGi-модули прямо в образ
+COPY bundles/osgi/modules /opt/liferay/osgi/modules
+
+# Если есть темы или war-файлы — тоже копируем
+COPY bundles/deploy /opt/liferay/deploy
+
+# Можно кастомизировать конфиги (если нужно)
+# COPY configs /opt/liferay/osgi/configs

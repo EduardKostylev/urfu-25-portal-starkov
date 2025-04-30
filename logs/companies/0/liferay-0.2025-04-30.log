@@ -1,0 +1,911 @@
+2025-04-30 10:11:18.155 INFO  [main][PortalContextLoaderListener:123] JVM arguments: -Djava.util.logging.config.file=/opt/liferay/tomcat/conf/logging.properties -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager -Djdk.tls.ephemeralDHKeySize=2048 -Djava.protocol.handler.pkgs=org.apache.catalina.webresources -Dorg.apache.catalina.security.SecurityListener.UMASK=0027 -Dfile.encoding=UTF-8 -Djava.locale.providers=JRE,COMPAT,CLDR -Djava.net.preferIPv4Stack=true -Duser.timezone=GMT -Xms2560m -Xmx2560m -XX:MaxNewSize=1536m -XX:MaxMetaspaceSize=768m -XX:MetaspaceSize=768m -XX:NewSize=1536m -XX:SurvivorRatio=7 -Dignore.endorsed.dirs= -Dcatalina.base=/opt/liferay/tomcat -Dcatalina.home=/opt/liferay/tomcat -Djava.io.tmpdir=/opt/liferay/tomcat/temp
+2025-04-30 10:11:28.175 WARN  [main][DialectDetector:82] Liferay is configured to use Hypersonic as its database. Do NOT use Hypersonic in production. Hypersonic is an embedded database useful for development and demonstration purposes. The database settings can be changed in portal-ext.properties.
+2025-04-30 10:11:28.175 INFO  [main][DialectDetector:153] Using dialect com.liferay.portal.dao.orm.hibernate.HSQLDialect for HSQL Database Engine 2.3
+2025-04-30 10:11:28.182 INFO  [main][DBInitUtil:141] Create tables and populate with default data
+2025-04-30 10:11:29.778 INFO  [main][ModuleFrameworkImpl:1267] Starting initial bundles
+2025-04-30 10:11:30.397 INFO  [ModuleFramework-Static-Bundles-8][InterpolationConfigurationPlugin:109] Configured directory for secrets: /opt/liferay/osgi/configs
+2025-04-30 10:11:31.397 INFO  [main][ModuleFrameworkImpl:1564] Started initial bundles
+2025-04-30 10:11:31.397 INFO  [main][ModuleFrameworkImpl:1613] Starting dynamic bundles
+2025-04-30 10:11:39.058 INFO  [main][ModuleFrameworkImpl:1635] Started dynamic bundles
+2025-04-30 10:11:39.058 INFO  [main][ModuleFrameworkImpl:1642] Starting web bundles
+2025-04-30 10:11:40.347 INFO  [main][ModuleFrameworkImpl:1696] Started web bundles
+2025-04-30 10:11:40.347 INFO  [main][ModuleFrameworkImpl:276] Navigate to Control Panel > System > Gogo Shell and enter "lb" to see all bundles
+2025-04-30 10:11:41.543 WARN  [main][SidecarManager:103] Liferay automatically starts a child process of Elasticsearch named sidecar for convenient development and demonstration purposes. Do NOT use sidecar in production. Refer to the documentation for details on the limitations of sidecar and instructions on configuring a remote Elasticsearch connection in the Control Panel.
+2025-04-30 10:11:47.991 INFO  [main][Sidecar:119] Sidecar Elasticsearch liferay started at 127.0.0.1:9201
+2025-04-30 10:11:51.249 INFO  [main][StartupHelperUtil:86] There are no patches installed
+2025-04-30 10:11:51.330 INFO  [main][LoggingTimer:83] Starting com.liferay.portal.events.StartupHelperUtil#initResourceActions
+2025-04-30 10:11:51.366 INFO  [main][LoggingTimer:44] Completed com.liferay.portal.events.StartupHelperUtil#initResourceActions in 36 ms
+2025-04-30 10:11:51.371 INFO  [main][VerifyProcess:76] Verifying com.liferay.portal.verify.VerifyProcessSuite
+2025-04-30 10:11:51.371 INFO  [main][VerifyProcess:76] Verifying com.liferay.portal.verify.VerifyGroup
+2025-04-30 10:11:51.372 INFO  [main][LoggingTimer:83] Starting com.liferay.portal.verify.VerifyGroup#verifyStagedGroups
+2025-04-30 10:11:51.435 INFO  [main][LoggingTimer:44] Completed com.liferay.portal.verify.VerifyGroup#verifyStagedGroups in 63 ms
+2025-04-30 10:11:51.435 INFO  [main][VerifyProcess:89] Completed verification process com.liferay.portal.verify.VerifyGroup in 64 ms
+2025-04-30 10:11:51.435 INFO  [main][VerifyProcess:76] Verifying com.liferay.portal.verify.VerifyResourcePermissions
+2025-04-30 10:11:51.440 INFO  [main][VerifyProcess:89] Completed verification process com.liferay.portal.verify.VerifyResourcePermissions in 5 ms
+2025-04-30 10:11:51.440 INFO  [main][VerifyProcess:89] Completed verification process com.liferay.portal.verify.VerifyProcessSuite in 70 ms
+2025-04-30 10:11:51.722 INFO  [main][AutoDeployDir:176] Auto deploy scanner started for /opt/liferay/deploy
+2025-04-30 10:11:58.374 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][ThemeHotDeployListener:108] 1 theme for admin-theme is available for use
+2025-04-30 10:11:58.487 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][ThemeHotDeployListener:108] 1 theme for speedwell-theme is available for use
+2025-04-30 10:11:58.572 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][ThemeHotDeployListener:108] 1 theme for dialect-theme is available for use
+2025-04-30 10:11:58.648 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][ThemeHotDeployListener:108] 1 theme for minium-theme is available for use
+2025-04-30 10:11:58.699 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][ThemeHotDeployListener:108] 1 theme for classic-theme is available for use
+2025-04-30 10:11:59.373 INFO  [Portal Dependency Manager Component Executor--1][UpgradeProcess:98] Upgrading com.liferay.segments.content.targeting.upgrade.internal.upgrade.v1_0_0.ContentTargetingUpgradeProcess
+2025-04-30 10:11:59.375 INFO  [Portal Dependency Manager Component Executor--1][UpgradeProcess:113] Completed upgrade process com.liferay.segments.content.targeting.upgrade.internal.upgrade.v1_0_0.ContentTargetingUpgradeProcess in 2 ms
+2025-04-30 10:11:59.464 INFO  [Portal Dependency Manager Component Executor--1][VerifyProcess:76] Verifying com.liferay.portal.security.service.access.policy.internal.verify.SAPServiceVerifyProcess
+2025-04-30 10:11:59.465 INFO  [Portal Dependency Manager Component Executor--1][LoggingTimer:83] Starting com.liferay.portal.security.service.access.policy.internal.verify.SAPServiceVerifyProcess#_verifyDefaultSAPEntry
+2025-04-30 10:11:59.469 INFO  [Portal Dependency Manager Component Executor--1][LoggingTimer:44] Completed com.liferay.portal.security.service.access.policy.internal.verify.SAPServiceVerifyProcess#_verifyDefaultSAPEntry in 4 ms
+2025-04-30 10:11:59.469 INFO  [Portal Dependency Manager Component Executor--1][VerifyProcess:89] Completed verification process com.liferay.portal.security.service.access.policy.internal.verify.SAPServiceVerifyProcess in 5 ms
+2025-04-30 10:11:59.799 INFO  [Portal Dependency Manager Component Executor--1][VerifyProcess:76] Verifying com.liferay.blogs.internal.verify.BlogsServiceVerifyProcess
+2025-04-30 10:11:59.800 INFO  [Portal Dependency Manager Component Executor--1][VerifyProcess:89] Completed verification process com.liferay.blogs.internal.verify.BlogsServiceVerifyProcess in 0 ms
+2025-04-30 10:11:59.805 INFO  [Portal Dependency Manager Component Executor--1][VerifyProcess:76] Verifying com.liferay.message.boards.internal.verify.MessageBoardsServiceVerifyProcess
+2025-04-30 10:11:59.806 INFO  [Portal Dependency Manager Component Executor--1][LoggingTimer:83] Starting com.liferay.message.boards.internal.verify.MessageBoardsServiceVerifyProcess#verifyGroupedModels
+2025-04-30 10:11:59.809 INFO  [ForkJoinPool-1-worker-2][LoggingTimer:83] Starting com.liferay.portal.verify.VerifyGroupedModel#verifyGroupedModel#MBThreadFlag
+2025-04-30 10:11:59.809 INFO  [ForkJoinPool-1-worker-9][LoggingTimer:83] Starting com.liferay.portal.verify.VerifyGroupedModel#verifyGroupedModel#MBDiscussion
+2025-04-30 10:11:59.810 INFO  [ForkJoinPool-1-worker-2][LoggingTimer:44] Completed com.liferay.portal.verify.VerifyGroupedModel#verifyGroupedModel#MBThreadFlag in 1 ms
+2025-04-30 10:11:59.810 INFO  [ForkJoinPool-1-worker-9][LoggingTimer:44] Completed com.liferay.portal.verify.VerifyGroupedModel#verifyGroupedModel#MBDiscussion in 1 ms
+2025-04-30 10:11:59.810 INFO  [Portal Dependency Manager Component Executor--1][LoggingTimer:44] Completed com.liferay.message.boards.internal.verify.MessageBoardsServiceVerifyProcess#verifyGroupedModels in 4 ms
+2025-04-30 10:11:59.810 INFO  [Portal Dependency Manager Component Executor--1][VerifyProcess:89] Completed verification process com.liferay.message.boards.internal.verify.MessageBoardsServiceVerifyProcess in 5 ms
+2025-04-30 10:11:59.861 INFO  [Portal Dependency Manager Component Executor--1][VerifyProcess:76] Verifying com.liferay.wiki.internal.verify.WikiServiceVerifyProcess
+2025-04-30 10:11:59.862 INFO  [Portal Dependency Manager Component Executor--1][VerifyProcess:89] Completed verification process com.liferay.wiki.internal.verify.WikiServiceVerifyProcess in 1 ms
+2025-04-30 10:12:00.905 INFO  [Portal Dependency Manager Component Executor--1][UpgradeProcess:98] Upgrading com.liferay.portal.kernel.upgrade.DummyUpgradeProcess
+2025-04-30 10:12:00.906 INFO  [Portal Dependency Manager Component Executor--1][UpgradeProcess:113] Completed upgrade process com.liferay.portal.kernel.upgrade.DummyUpgradeProcess in 1 ms
+2025-04-30 10:12:03.624 INFO  [Portal Dependency Manager Component Executor--1][VerifyProcess:76] Verifying com.liferay.commerce.account.internal.verify.CommerceAccountServiceVerifyProcess
+2025-04-30 10:12:03.624 INFO  [Portal Dependency Manager Component Executor--1][LoggingTimer:83] Starting com.liferay.commerce.account.internal.verify.CommerceAccountServiceVerifyProcess#_verifyAccountRoles
+2025-04-30 10:12:03.895 INFO  [Portal Dependency Manager Component Executor--1][LoggingTimer:44] Completed com.liferay.commerce.account.internal.verify.CommerceAccountServiceVerifyProcess#_verifyAccountRoles in 271 ms
+2025-04-30 10:12:03.896 INFO  [Portal Dependency Manager Component Executor--1][LoggingTimer:83] Starting com.liferay.commerce.account.internal.verify.CommerceAccountServiceVerifyProcess#_verifyAccountGroup
+2025-04-30 10:12:03.898 INFO  [Portal Dependency Manager Component Executor--1][LoggingTimer:44] Completed com.liferay.commerce.account.internal.verify.CommerceAccountServiceVerifyProcess#_verifyAccountGroup in 1 ms
+2025-04-30 10:12:03.898 INFO  [Portal Dependency Manager Component Executor--1][VerifyProcess:89] Completed verification process com.liferay.commerce.account.internal.verify.CommerceAccountServiceVerifyProcess in 274 ms
+2025-04-30 10:12:07.802 INFO  [Portal Dependency Manager Component Executor--1][VerifyProcess:76] Verifying com.liferay.commerce.price.list.internal.verify.CommercePriceListServiceVerifyProcess
+2025-04-30 10:12:07.802 INFO  [Portal Dependency Manager Component Executor--1][LoggingTimer:83] Starting com.liferay.commerce.price.list.internal.verify.CommercePriceListServiceVerifyProcess#_verifyBasePriceLists
+2025-04-30 10:12:07.813 INFO  [Portal Dependency Manager Component Executor--1][LoggingTimer:44] Completed com.liferay.commerce.price.list.internal.verify.CommercePriceListServiceVerifyProcess#_verifyBasePriceLists in 11 ms
+2025-04-30 10:12:07.813 INFO  [Portal Dependency Manager Component Executor--1][VerifyProcess:89] Completed verification process com.liferay.commerce.price.list.internal.verify.CommercePriceListServiceVerifyProcess in 12 ms
+2025-04-30 10:12:08.049 INFO  [Portal Dependency Manager Component Executor--1][VerifyProcess:76] Verifying com.liferay.commerce.product.internal.verify.CommerceProductServiceVerifyProcess
+2025-04-30 10:12:08.049 INFO  [Portal Dependency Manager Component Executor--1][LoggingTimer:83] Starting com.liferay.commerce.product.internal.verify.CommerceProductServiceVerifyProcess#_verifyCPMeasurementUnits
+2025-04-30 10:12:08.063 INFO  [Portal Dependency Manager Component Executor--1][LoggingTimer:44] Completed com.liferay.commerce.product.internal.verify.CommerceProductServiceVerifyProcess#_verifyCPMeasurementUnits in 14 ms
+2025-04-30 10:12:08.063 INFO  [Portal Dependency Manager Component Executor--1][VerifyProcess:89] Completed verification process com.liferay.commerce.product.internal.verify.CommerceProductServiceVerifyProcess in 15 ms
+2025-04-30 10:12:08.431 INFO  [Portal Dependency Manager Component Executor--1][VerifyProcess:76] Verifying com.liferay.document.library.internal.verify.DLServiceVerifyProcess
+2025-04-30 10:12:08.432 INFO  [Portal Dependency Manager Component Executor--1][LoggingTimer:83] Starting com.liferay.document.library.internal.verify.DLServiceVerifyProcess#_checkDLFileEntryMetadata
+2025-04-30 10:12:08.434 INFO  [Portal Dependency Manager Component Executor--1][LoggingTimer:44] Completed com.liferay.document.library.internal.verify.DLServiceVerifyProcess#_checkDLFileEntryMetadata in 2 ms
+2025-04-30 10:12:08.434 INFO  [Portal Dependency Manager Component Executor--1][LoggingTimer:83] Starting com.liferay.document.library.internal.verify.DLServiceVerifyProcess#_checkMimeTypes
+2025-04-30 10:12:08.437 INFO  [Portal Dependency Manager Component Executor--1][LoggingTimer:44] Completed com.liferay.document.library.internal.verify.DLServiceVerifyProcess#_checkMimeTypes in 2 ms
+2025-04-30 10:12:08.437 INFO  [Portal Dependency Manager Component Executor--1][LoggingTimer:83] Starting com.liferay.document.library.internal.verify.DLServiceVerifyProcess#_updateClassNameId
+2025-04-30 10:12:08.437 INFO  [Portal Dependency Manager Component Executor--1][LoggingTimer:44] Completed com.liferay.document.library.internal.verify.DLServiceVerifyProcess#_updateClassNameId in 0 ms
+2025-04-30 10:12:08.438 INFO  [Portal Dependency Manager Component Executor--1][LoggingTimer:83] Starting com.liferay.document.library.internal.verify.DLServiceVerifyProcess#_updateFileEntryAssets
+2025-04-30 10:12:08.439 INFO  [Portal Dependency Manager Component Executor--1][LoggingTimer:44] Completed com.liferay.document.library.internal.verify.DLServiceVerifyProcess#_updateFileEntryAssets in 1 ms
+2025-04-30 10:12:08.439 INFO  [Portal Dependency Manager Component Executor--1][LoggingTimer:83] Starting com.liferay.document.library.internal.verify.DLServiceVerifyProcess#_updateFolderAssets
+2025-04-30 10:12:08.519 INFO  [Portal Dependency Manager Component Executor--1][LoggingTimer:44] Completed com.liferay.document.library.internal.verify.DLServiceVerifyProcess#_updateFolderAssets in 79 ms
+2025-04-30 10:12:08.519 INFO  [Portal Dependency Manager Component Executor--1][VerifyProcess:89] Completed verification process com.liferay.document.library.internal.verify.DLServiceVerifyProcess in 88 ms
+2025-04-30 10:12:08.868 INFO  [Portal Dependency Manager Component Executor--1][UpgradeProcess:98] Upgrading com.liferay.message.boards.moderation.internal.upgrade.v1_0_0.MBModerationWorkflowDefinitionUpgradeProcess
+2025-04-30 10:12:08.880 INFO  [Portal Dependency Manager Component Executor--1][UpgradeProcess:113] Completed upgrade process com.liferay.message.boards.moderation.internal.upgrade.v1_0_0.MBModerationWorkflowDefinitionUpgradeProcess in 13 ms
+2025-04-30 10:12:09.449 INFO  [Portal Dependency Manager Component Executor--1][UpgradeProcess:98] Upgrading com.liferay.document.library.google.docs.internal.upgrade.v1_0_0.DLFileEntryTypeNameUpgradeProcess
+2025-04-30 10:12:09.453 INFO  [Portal Dependency Manager Component Executor--1][UpgradeProcess:113] Completed upgrade process com.liferay.document.library.google.docs.internal.upgrade.v1_0_0.DLFileEntryTypeNameUpgradeProcess in 4 ms
+2025-04-30 10:12:09.454 INFO  [Portal Dependency Manager Component Executor--1][UpgradeProcess:98] Upgrading com.liferay.document.library.google.docs.internal.upgrade.v1_0_0.PortletPreferencesUpgradeProcess
+2025-04-30 10:12:09.459 INFO  [Portal Dependency Manager Component Executor--1][UpgradeProcess:113] Completed upgrade process com.liferay.document.library.google.docs.internal.upgrade.v1_0_0.PortletPreferencesUpgradeProcess in 5 ms
+2025-04-30 10:12:09.460 INFO  [Portal Dependency Manager Component Executor--1][UpgradeProcess:98] Upgrading com.liferay.document.library.google.docs.internal.upgrade.v2_0_0.DLFileEntryTypeUpgradeProcess
+2025-04-30 10:12:09.519 INFO  [Portal Dependency Manager Component Executor--1][UpgradeProcess:113] Completed upgrade process com.liferay.document.library.google.docs.internal.upgrade.v2_0_0.DLFileEntryTypeUpgradeProcess in 59 ms
+2025-04-30 10:12:09.656 INFO  [Portal Dependency Manager Component Executor--1][VerifyProcess:76] Verifying com.liferay.dynamic.data.mapping.verify.DDMServiceVerifyProcess
+2025-04-30 10:12:09.656 INFO  [Portal Dependency Manager Component Executor--1][LoggingTimer:83] Starting com.liferay.dynamic.data.mapping.verify.DDMServiceVerifyProcess#verifyStructureLinks
+2025-04-30 10:12:09.657 INFO  [Portal Dependency Manager Component Executor--1][LoggingTimer:44] Completed com.liferay.dynamic.data.mapping.verify.DDMServiceVerifyProcess#verifyStructureLinks in 1 ms
+2025-04-30 10:12:09.657 INFO  [Portal Dependency Manager Component Executor--1][LoggingTimer:83] Starting com.liferay.dynamic.data.mapping.verify.DDMServiceVerifyProcess#verifyTemplateLinks
+2025-04-30 10:12:09.658 INFO  [Portal Dependency Manager Component Executor--1][LoggingTimer:44] Completed com.liferay.dynamic.data.mapping.verify.DDMServiceVerifyProcess#verifyTemplateLinks in 1 ms
+2025-04-30 10:12:09.658 INFO  [Portal Dependency Manager Component Executor--1][VerifyProcess:89] Completed verification process com.liferay.dynamic.data.mapping.verify.DDMServiceVerifyProcess in 3 ms
+2025-04-30 10:12:09.731 INFO  [Portal Dependency Manager Component Executor--1][UpgradeProcess:98] Upgrading com.liferay.image.upgrade.ImageCompanyIdUpgradeProcess
+2025-04-30 10:12:09.733 INFO  [Portal Dependency Manager Component Executor--1][UpgradeProcess:113] Completed upgrade process com.liferay.image.upgrade.ImageCompanyIdUpgradeProcess in 3 ms
+2025-04-30 10:12:09.734 INFO  [Portal Dependency Manager Component Executor--1][UpgradeProcess:98] Upgrading com.liferay.image.upgrade.ImageCompanyIdUpgradeProcess
+2025-04-30 10:12:09.740 INFO  [Portal Dependency Manager Component Executor--1][UpgradeProcess:113] Completed upgrade process com.liferay.image.upgrade.ImageCompanyIdUpgradeProcess in 6 ms
+2025-04-30 10:12:09.741 INFO  [Portal Dependency Manager Component Executor--1][UpgradeProcess:98] Upgrading com.liferay.image.upgrade.ImageCompanyIdUpgradeProcess
+2025-04-30 10:12:09.744 INFO  [Portal Dependency Manager Component Executor--1][UpgradeProcess:113] Completed upgrade process com.liferay.image.upgrade.ImageCompanyIdUpgradeProcess in 4 ms
+2025-04-30 10:12:09.744 INFO  [Portal Dependency Manager Component Executor--1][UpgradeProcess:98] Upgrading com.liferay.image.upgrade.ImageCompanyIdUpgradeProcess
+2025-04-30 10:12:09.747 INFO  [Portal Dependency Manager Component Executor--1][UpgradeProcess:113] Completed upgrade process com.liferay.image.upgrade.ImageCompanyIdUpgradeProcess in 3 ms
+2025-04-30 10:12:09.748 INFO  [Portal Dependency Manager Component Executor--1][UpgradeProcess:98] Upgrading com.liferay.image.upgrade.ImageCompanyIdUpgradeProcess
+2025-04-30 10:12:09.749 INFO  [Portal Dependency Manager Component Executor--1][UpgradeProcess:113] Completed upgrade process com.liferay.image.upgrade.ImageCompanyIdUpgradeProcess in 1 ms
+2025-04-30 10:12:09.750 INFO  [Portal Dependency Manager Component Executor--1][UpgradeProcess:98] Upgrading com.liferay.image.upgrade.ImageCompanyIdUpgradeProcess
+2025-04-30 10:12:09.750 INFO  [Portal Dependency Manager Component Executor--1][UpgradeProcess:113] Completed upgrade process com.liferay.image.upgrade.ImageCompanyIdUpgradeProcess in 0 ms
+2025-04-30 10:12:09.751 INFO  [Portal Dependency Manager Component Executor--1][UpgradeProcess:98] Upgrading com.liferay.image.internal.upgrade.v1_0_0.ImageStorageUpgradeProcess
+2025-04-30 10:12:09.752 INFO  [Portal Dependency Manager Component Executor--1][UpgradeProcess:113] Completed upgrade process com.liferay.image.internal.upgrade.v1_0_0.ImageStorageUpgradeProcess in 1 ms
+2025-04-30 10:12:10.870 INFO  [Portal Dependency Manager Component Executor--1][UpgradeProcess:98] Upgrading com.liferay.image.upgrade.ImageCompanyIdUpgradeProcess
+2025-04-30 10:12:10.871 INFO  [Portal Dependency Manager Component Executor--1][UpgradeProcess:113] Completed upgrade process com.liferay.image.upgrade.ImageCompanyIdUpgradeProcess in 2 ms
+2025-04-30 10:12:10.872 INFO  [Portal Dependency Manager Component Executor--1][UpgradeProcess:98] Upgrading com.liferay.image.upgrade.ImageCompanyIdUpgradeProcess
+2025-04-30 10:12:10.874 INFO  [Portal Dependency Manager Component Executor--1][UpgradeProcess:113] Completed upgrade process com.liferay.image.upgrade.ImageCompanyIdUpgradeProcess in 1 ms
+2025-04-30 10:12:11.026 INFO  [Portal Dependency Manager Component Executor--1][UpgradeProcess:98] Upgrading com.liferay.adaptive.media.document.library.thumbnails.internal.upgrade.v1_0_0.DocumentLibraryThumbnailsConfigurationUpgradeProcess
+2025-04-30 10:12:11.026 INFO  [Portal Dependency Manager Component Executor--1][LoggingTimer:83] Starting com.liferay.adaptive.media.document.library.thumbnails.internal.upgrade.v1_0_0.DocumentLibraryThumbnailsConfigurationUpgradeProcess#doUpgrade
+2025-04-30 10:12:11.035 INFO  [Portal Dependency Manager Component Executor--1][LoggingTimer:44] Completed com.liferay.adaptive.media.document.library.thumbnails.internal.upgrade.v1_0_0.DocumentLibraryThumbnailsConfigurationUpgradeProcess#doUpgrade in 9 ms
+2025-04-30 10:12:11.035 INFO  [Portal Dependency Manager Component Executor--1][UpgradeProcess:113] Completed upgrade process com.liferay.adaptive.media.document.library.thumbnails.internal.upgrade.v1_0_0.DocumentLibraryThumbnailsConfigurationUpgradeProcess in 10 ms
+2025-04-30 10:12:19.433 WARN  [http-nio-8080-exec-11][code_jsp:159] {code="404", msg="ProxyServlet: /accessibility-settings-state-web/__liferay__/index.js", uri=/o/accessibility-settings-state-web/__liferay__/index.js}
+2025-04-30 10:12:19.433 WARN  [http-nio-8080-exec-12][code_jsp:159] {code="404", msg="ProxyServlet: /o/frontend-js-node-shims/__liferay__/exports/process.js", uri=/o/frontend-js-node-shims/__liferay__/exports/process.js}
+2025-04-30 10:12:19.453 WARN  [http-nio-8080-exec-5][code_jsp:159] {code="404", msg="ProxyServlet: /o/frontend-taglib-clay/__liferay__/exports/@clayui$provider.js", uri=/o/frontend-taglib-clay/__liferay__/exports/@clayui$provider.js}
+2025-04-30 10:12:19.454 WARN  [http-nio-8080-exec-4][code_jsp:159] {code="404", msg="ProxyServlet: /frontend-js-dependencies-web/__liferay__/exports/dom-align.js", uri=/o/frontend-js-dependencies-web/__liferay__/exports/dom-align.js}
+2025-04-30 10:12:19.461 WARN  [http-nio-8080-exec-11][code_jsp:159] {code="404", msg="ProxyServlet: /frontend-js-dependencies-web/__liferay__/exports/fuzzy.js", uri=/o/frontend-js-dependencies-web/__liferay__/exports/fuzzy.js}
+2025-04-30 10:12:19.476 WARN  [http-nio-8080-exec-9][code_jsp:159] {code="404", msg="ProxyServlet: /frontend-js-dependencies-web/__liferay__/exports/react-transition-group.js", uri=/o/frontend-js-dependencies-web/__liferay__/exports/react-transition-group.js}
+2025-04-30 10:12:19.523 WARN  [http-nio-8080-exec-8][code_jsp:159] {code="404", msg="ProxyServlet: /o/frontend-taglib-clay/__liferay__/exports/@clayui$provider.js", uri=/o/frontend-taglib-clay/__liferay__/exports/@clayui$provider.js}
+2025-04-30 10:12:19.531 WARN  [http-nio-8080-exec-11][code_jsp:159] {code="404", msg="ProxyServlet: /frontend-js-dependencies-web/__liferay__/exports/react-transition-group.js", uri=/o/frontend-js-dependencies-web/__liferay__/exports/react-transition-group.js}
+2025-04-30 10:13:13.148 WARN  [http-nio-8080-exec-9][code_jsp:159] {code="404", msg="ProxyServlet: /o/frontend-taglib-clay/__liferay__/exports/@clayui$provider.js", uri=/o/frontend-taglib-clay/__liferay__/exports/@clayui$provider.js}
+2025-04-30 10:14:54.398 WARN  [http-nio-8080-exec-11][code_jsp:159] {code="404", msg="ProxyServlet: /имя-модуля/index.html", uri=/o/%D0%B8%D0%BC%D1%8F-%D0%BC%D0%BE%D0%B4%D1%83%D0%BB%D1%8F/index.html}
+2025-04-30 10:16:08.994 WARN  [http-nio-8080-exec-2][code_jsp:159] {code="404", msg="ProxyServlet: /govnoray-portlet/index.html", uri=/o/govnoray-portlet/index.html}
+2025-04-30 10:16:17.044 WARN  [http-nio-8080-exec-4][code_jsp:159] {code="404", msg="ProxyServlet: /govnoray-portlet/index.html", uri=/o/govnoray-portlet/index.html}
+2025-04-30 10:16:24.715 WARN  [http-nio-8080-exec-7][code_jsp:159] {code="404", msg="ProxyServlet: /govnoray-portlet/index.html", uri=/o/govnoray-portlet/index.html}
+2025-04-30 10:16:31.405 WARN  [http-nio-8080-exec-10][code_jsp:159] {code="404", msg="ProxyServlet: /govnoray-portlet/index.html", uri=/o/govnoray-portlet/index.html}
+2025-04-30 10:17:43.421 WARN  [http-nio-8080-exec-12][code_jsp:159] {code="404", msg="ProxyServlet: /govnoray-portlet/index.html", uri=/o/govnoray-portlet/index.html}
+2025-04-30 10:37:37.066 WARN  [http-nio-8080-exec-11][code_jsp:159] {code="404", msg="ProxyServlet: /govnoray-portlet/index.html", uri=/o/govnoray-portlet/index.html}
+2025-04-30 10:37:37.721 WARN  [http-nio-8080-exec-1][code_jsp:159] {code="404", msg="ProxyServlet: /govnoray-portlet/index.html", uri=/o/govnoray-portlet/index.html}
+2025-04-30 10:37:45.951 WARN  [http-nio-8080-exec-2][code_jsp:159] {code="404", msg="ProxyServlet: /govnoray-portlet/index.html", uri=/o/govnoray-portlet/index.html}
+2025-04-30 10:37:47.257 WARN  [http-nio-8080-exec-4][code_jsp:159] {code="404", msg="ProxyServlet: /govnoray-portlet/index.html", uri=/o/govnoray-portlet/index.html}
+2025-04-30 10:42:47.273 INFO  [com.liferay.portal.kernel.deploy.auto.AutoDeployScanner][AutoDeployDir:238] Processing com.example.govnoray-1.0.0.jar
+2025-04-30 10:42:53.874 ERROR [fileinstall-directory-watcher][DirectoryWatcher:1173] Unable to start bundle: file:/opt/liferay/osgi/modules/com.example.govnoray-1.0.0.jar
+com.liferay.portal.kernel.log.LogSanitizerException: org.osgi.framework.BundleException: Could not resolve module: com.example.govnoray [1549]_  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=21))"_ [Sanitized]
+	at org.eclipse.osgi.container.Module.start(Module.java:444) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.start(EquinoxBundle.java:428) ~[org.eclipse.osgi.jar:?]
+	at com.liferay.portal.file.install.internal.DirectoryWatcher._startBundle(DirectoryWatcher.java:1156) [bundleFile:?]
+	at com.liferay.portal.file.install.internal.DirectoryWatcher._startBundles(DirectoryWatcher.java:1189) [bundleFile:?]
+	at com.liferay.portal.file.install.internal.DirectoryWatcher._process(DirectoryWatcher.java:1046) [bundleFile:?]
+	at com.liferay.portal.file.install.internal.DirectoryWatcher.run(DirectoryWatcher.java:221) [bundleFile:?]
+2025-04-30 10:43:05.070 INFO  [main][PortalContextLoaderListener:123] JVM arguments: -Djava.util.logging.config.file=/opt/liferay/tomcat/conf/logging.properties -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager -Djdk.tls.ephemeralDHKeySize=2048 -Djava.protocol.handler.pkgs=org.apache.catalina.webresources -Dorg.apache.catalina.security.SecurityListener.UMASK=0027 -Dfile.encoding=UTF-8 -Djava.locale.providers=JRE,COMPAT,CLDR -Djava.net.preferIPv4Stack=true -Duser.timezone=GMT -Xms2560m -Xmx2560m -XX:MaxNewSize=1536m -XX:MaxMetaspaceSize=768m -XX:MetaspaceSize=768m -XX:NewSize=1536m -XX:SurvivorRatio=7 -Dignore.endorsed.dirs= -Dcatalina.base=/opt/liferay/tomcat -Dcatalina.home=/opt/liferay/tomcat -Djava.io.tmpdir=/opt/liferay/tomcat/temp
+2025-04-30 10:43:06.411 WARN  [main][DialectDetector:82] Liferay is configured to use Hypersonic as its database. Do NOT use Hypersonic in production. Hypersonic is an embedded database useful for development and demonstration purposes. The database settings can be changed in portal-ext.properties.
+2025-04-30 10:43:06.411 INFO  [main][DialectDetector:153] Using dialect com.liferay.portal.dao.orm.hibernate.HSQLDialect for HSQL Database Engine 2.3
+2025-04-30 10:43:07.929 INFO  [main][ModuleFrameworkImpl:1267] Starting initial bundles
+2025-04-30 10:43:08.080 INFO  [ModuleFramework-Static-Bundles-8][InterpolationConfigurationPlugin:109] Configured directory for secrets: /opt/liferay/osgi/configs
+2025-04-30 10:43:08.791 INFO  [main][ModuleFrameworkImpl:1564] Started initial bundles
+2025-04-30 10:43:08.791 INFO  [main][ModuleFrameworkImpl:1613] Starting dynamic bundles
+2025-04-30 10:43:14.323 INFO  [main][ModuleFrameworkImpl:1635] Started dynamic bundles
+2025-04-30 10:43:14.323 INFO  [main][ModuleFrameworkImpl:1642] Starting web bundles
+2025-04-30 10:43:15.240 ERROR [Framework Event Dispatcher: Equinox Container: 11aa3292-2367-431f-8fb5-42be6e1e1f0d][Framework:56] FrameworkEvent ERROR
+com.liferay.portal.kernel.log.LogSanitizerException: org.osgi.framework.BundleException: Could not resolve module: com.example.govnoray [1549]_  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=21))"_ [Sanitized]
+	at org.eclipse.osgi.container.Module.start(Module.java:444) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1682) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1662) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1624) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1555) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340) [org.eclipse.osgi.jar:?]
+2025-04-30 10:43:15.274 ERROR [main][DirectoryWatcher:1173] Unable to start bundle: file:/opt/liferay/osgi/modules/com.example.govnoray-1.0.0.jar
+com.liferay.portal.kernel.log.LogSanitizerException: org.osgi.framework.BundleException: Could not resolve module: com.example.govnoray [1549]_  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=21))"_ [Sanitized]
+	at org.eclipse.osgi.container.Module.start(Module.java:444) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.start(EquinoxBundle.java:428) ~[org.eclipse.osgi.jar:?]
+	at com.liferay.portal.file.install.internal.DirectoryWatcher._startBundle(DirectoryWatcher.java:1156) [bundleFile:?]
+	at com.liferay.portal.file.install.internal.DirectoryWatcher._startBundles(DirectoryWatcher.java:1189) [bundleFile:?]
+	at com.liferay.portal.file.install.internal.DirectoryWatcher._startAllBundles(DirectoryWatcher.java:1130) [bundleFile:?]
+	at com.liferay.portal.file.install.internal.DirectoryWatcher._process(DirectoryWatcher.java:1041) [bundleFile:?]
+	at com.liferay.portal.file.install.internal.DirectoryWatcher.start(DirectoryWatcher.java:264) [bundleFile:?]
+	at com.liferay.portal.file.install.internal.activator.FileInstallImplBundleActivator.start(FileInstallImplBundleActivator.java:107) [bundleFile:?]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:779) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1) [org.eclipse.osgi.jar:?]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_342]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:772) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:729) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1002) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:354) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.container.Module.doStart(Module.java:581) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.container.Module.start(Module.java:449) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.start(EquinoxBundle.java:428) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.start(EquinoxBundle.java:447) [org.eclipse.osgi.jar:?]
+	at com.liferay.portal.bootstrap.ModuleFrameworkImpl._startDynamicBundles(ModuleFrameworkImpl.java:1688) [com.liferay.portal.bootstrap.jar:?]
+	at com.liferay.portal.bootstrap.ModuleFrameworkImpl.startFramework(ModuleFrameworkImpl.java:273) [com.liferay.portal.bootstrap.jar:?]
+	at com.liferay.portal.module.framework.ModuleFrameworkUtil.startFramework(ModuleFrameworkUtil.java:45) [portal-impl.jar:?]
+	at com.liferay.portal.spring.context.PortalContextLoaderListener.contextInitialized(PortalContextLoaderListener.java:286) [portal-impl.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_342]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_342]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_342]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_342]
+	at com.liferay.shielded.container.internal.proxy.ContextClassLoaderInvocationHandler.invoke(ContextClassLoaderInvocationHandler.java:43) [com.liferay.shielded.container.impl.jar:?]
+	at com.liferay.shielded.container.internal.proxy.EventListenerInvocationHandler.invoke(EventListenerInvocationHandler.java:64) [com.liferay.shielded.container.impl.jar:?]
+	at com.sun.proxy.$Proxy6.contextInitialized(Unknown Source) [?:?]
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4766) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5230) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:726) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:698) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:696) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:690) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1889) [catalina.jar:9.0.56]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [?:1.8.0_342]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [?:1.8.0_342]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) [tomcat-util.jar:9.0.56]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:112) [?:1.8.0_342]
+	at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:583) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:473) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1618) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:319) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:423) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:366) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:946) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:835) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1396) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1386) [catalina.jar:9.0.56]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [?:1.8.0_342]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) [tomcat-util.jar:9.0.56]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134) [?:1.8.0_342]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:919) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:263) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:432) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:927) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:772) [catalina.jar:9.0.56]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_342]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_342]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_342]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_342]
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345) [bootstrap.jar:9.0.56]
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476) [bootstrap.jar:9.0.56]
+2025-04-30 10:43:15.276 INFO  [main][ModuleFrameworkImpl:1696] Started web bundles
+2025-04-30 10:43:15.276 INFO  [main][ModuleFrameworkImpl:276] Navigate to Control Panel > System > Gogo Shell and enter "lb" to see all bundles
+2025-04-30 10:43:15.285 ERROR [fileinstall-directory-watcher][DirectoryWatcher:1173] Unable to start bundle: file:/opt/liferay/osgi/modules/com.example.govnoray-1.0.0.jar
+com.liferay.portal.kernel.log.LogSanitizerException: org.osgi.framework.BundleException: Could not resolve module: com.example.govnoray [1549]_  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=21))"_ [Sanitized]
+	at org.eclipse.osgi.container.Module.start(Module.java:444) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.start(EquinoxBundle.java:428) ~[org.eclipse.osgi.jar:?]
+	at com.liferay.portal.file.install.internal.DirectoryWatcher._startBundle(DirectoryWatcher.java:1156) [bundleFile:?]
+	at com.liferay.portal.file.install.internal.DirectoryWatcher._startBundles(DirectoryWatcher.java:1189) [bundleFile:?]
+	at com.liferay.portal.file.install.internal.DirectoryWatcher._startAllBundles(DirectoryWatcher.java:1130) [bundleFile:?]
+	at com.liferay.portal.file.install.internal.DirectoryWatcher._process(DirectoryWatcher.java:1041) [bundleFile:?]
+	at com.liferay.portal.file.install.internal.DirectoryWatcher.run(DirectoryWatcher.java:221) [bundleFile:?]
+2025-04-30 10:43:16.282 WARN  [main][SidecarManager:103] Liferay automatically starts a child process of Elasticsearch named sidecar for convenient development and demonstration purposes. Do NOT use sidecar in production. Refer to the documentation for details on the limitations of sidecar and instructions on configuring a remote Elasticsearch connection in the Control Panel.
+2025-04-30 10:43:23.042 INFO  [main][Sidecar:119] Sidecar Elasticsearch liferay started at 127.0.0.1:9201
+2025-04-30 10:43:25.411 INFO  [main][StartupHelperUtil:86] There are no patches installed
+2025-04-30 10:43:25.485 INFO  [main][LoggingTimer:83] Starting com.liferay.portal.events.StartupHelperUtil#initResourceActions
+2025-04-30 10:43:25.496 INFO  [main][LoggingTimer:44] Completed com.liferay.portal.events.StartupHelperUtil#initResourceActions in 11 ms
+2025-04-30 10:43:25.787 INFO  [main][AutoDeployDir:176] Auto deploy scanner started for /opt/liferay/deploy
+2025-04-30 10:43:30.885 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][ThemeHotDeployListener:108] 1 theme for admin-theme is available for use
+2025-04-30 10:43:30.959 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][ThemeHotDeployListener:108] 1 theme for speedwell-theme is available for use
+2025-04-30 10:43:31.031 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][ThemeHotDeployListener:108] 1 theme for dialect-theme is available for use
+2025-04-30 10:43:31.086 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][ThemeHotDeployListener:108] 1 theme for minium-theme is available for use
+2025-04-30 10:43:31.141 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][ThemeHotDeployListener:108] 1 theme for classic-theme is available for use
+2025-04-30 10:44:52.414 WARN  [http-nio-8080-exec-9][code_jsp:159] {code="404", msg="ProxyServlet: /polnoe_govno/index.html", uri=/o/polnoe_govno/index.html}
+2025-04-30 11:35:13.139 INFO  [main][PortalContextLoaderListener:123] JVM arguments: -Djava.util.logging.config.file=/opt/liferay/tomcat/conf/logging.properties -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager -Djdk.tls.ephemeralDHKeySize=2048 -Djava.protocol.handler.pkgs=org.apache.catalina.webresources -Dorg.apache.catalina.security.SecurityListener.UMASK=0027 -Dfile.encoding=UTF-8 -Djava.locale.providers=JRE,COMPAT,CLDR -Djava.net.preferIPv4Stack=true -Duser.timezone=GMT -Xms2560m -Xmx2560m -XX:MaxNewSize=1536m -XX:MaxMetaspaceSize=768m -XX:MetaspaceSize=768m -XX:NewSize=1536m -XX:SurvivorRatio=7 -Dignore.endorsed.dirs= -Dcatalina.base=/opt/liferay/tomcat -Dcatalina.home=/opt/liferay/tomcat -Djava.io.tmpdir=/opt/liferay/tomcat/temp
+2025-04-30 11:35:15.287 WARN  [main][DialectDetector:82] Liferay is configured to use Hypersonic as its database. Do NOT use Hypersonic in production. Hypersonic is an embedded database useful for development and demonstration purposes. The database settings can be changed in portal-ext.properties.
+2025-04-30 11:35:15.287 INFO  [main][DialectDetector:153] Using dialect com.liferay.portal.dao.orm.hibernate.HSQLDialect for HSQL Database Engine 2.3
+2025-04-30 11:35:17.133 INFO  [main][ModuleFrameworkImpl:1267] Starting initial bundles
+2025-04-30 11:35:17.337 INFO  [ModuleFramework-Static-Bundles-11][InterpolationConfigurationPlugin:109] Configured directory for secrets: /opt/liferay/osgi/configs
+2025-04-30 11:35:18.106 INFO  [main][ModuleFrameworkImpl:1564] Started initial bundles
+2025-04-30 11:35:18.106 INFO  [main][ModuleFrameworkImpl:1613] Starting dynamic bundles
+2025-04-30 11:35:24.108 INFO  [main][ModuleFrameworkImpl:1635] Started dynamic bundles
+2025-04-30 11:35:24.109 INFO  [main][ModuleFrameworkImpl:1642] Starting web bundles
+2025-04-30 11:35:25.111 ERROR [Framework Event Dispatcher: Equinox Container: ce973cf5-632e-4d51-9aee-4065c1b583dc][Framework:56] FrameworkEvent ERROR
+com.liferay.portal.kernel.log.LogSanitizerException: org.osgi.framework.BundleException: Could not resolve module: com.example.govnoray [1549]_  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=21))"_ [Sanitized]
+	at org.eclipse.osgi.container.Module.start(Module.java:444) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1682) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1662) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1624) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1555) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340) [org.eclipse.osgi.jar:?]
+2025-04-30 11:35:25.138 ERROR [main][DirectoryWatcher:1173] Unable to start bundle: file:/opt/liferay/osgi/modules/com.example.govnoray-1.0.0.jar
+com.liferay.portal.kernel.log.LogSanitizerException: org.osgi.framework.BundleException: Could not resolve module: com.example.govnoray [1549]_  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=21))"_ [Sanitized]
+	at org.eclipse.osgi.container.Module.start(Module.java:444) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.start(EquinoxBundle.java:428) ~[org.eclipse.osgi.jar:?]
+	at com.liferay.portal.file.install.internal.DirectoryWatcher._startBundle(DirectoryWatcher.java:1156) [bundleFile:?]
+	at com.liferay.portal.file.install.internal.DirectoryWatcher._startBundles(DirectoryWatcher.java:1189) [bundleFile:?]
+	at com.liferay.portal.file.install.internal.DirectoryWatcher._startAllBundles(DirectoryWatcher.java:1130) [bundleFile:?]
+	at com.liferay.portal.file.install.internal.DirectoryWatcher._process(DirectoryWatcher.java:1041) [bundleFile:?]
+	at com.liferay.portal.file.install.internal.DirectoryWatcher.start(DirectoryWatcher.java:264) [bundleFile:?]
+	at com.liferay.portal.file.install.internal.activator.FileInstallImplBundleActivator.start(FileInstallImplBundleActivator.java:107) [bundleFile:?]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:779) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1) [org.eclipse.osgi.jar:?]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_342]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:772) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:729) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1002) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:354) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.container.Module.doStart(Module.java:581) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.container.Module.start(Module.java:449) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.start(EquinoxBundle.java:428) [org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.start(EquinoxBundle.java:447) [org.eclipse.osgi.jar:?]
+	at com.liferay.portal.bootstrap.ModuleFrameworkImpl._startDynamicBundles(ModuleFrameworkImpl.java:1657) [com.liferay.portal.bootstrap.jar:?]
+	at com.liferay.portal.bootstrap.ModuleFrameworkImpl.startFramework(ModuleFrameworkImpl.java:273) [com.liferay.portal.bootstrap.jar:?]
+	at com.liferay.portal.module.framework.ModuleFrameworkUtil.startFramework(ModuleFrameworkUtil.java:45) [portal-impl.jar:?]
+	at com.liferay.portal.spring.context.PortalContextLoaderListener.contextInitialized(PortalContextLoaderListener.java:286) [portal-impl.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_342]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_342]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_342]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_342]
+	at com.liferay.shielded.container.internal.proxy.ContextClassLoaderInvocationHandler.invoke(ContextClassLoaderInvocationHandler.java:43) [com.liferay.shielded.container.impl.jar:?]
+	at com.liferay.shielded.container.internal.proxy.EventListenerInvocationHandler.invoke(EventListenerInvocationHandler.java:64) [com.liferay.shielded.container.impl.jar:?]
+	at com.sun.proxy.$Proxy6.contextInitialized(Unknown Source) [?:?]
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4766) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5230) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:726) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:698) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:696) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:690) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1889) [catalina.jar:9.0.56]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [?:1.8.0_342]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [?:1.8.0_342]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) [tomcat-util.jar:9.0.56]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:112) [?:1.8.0_342]
+	at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:583) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:473) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1618) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:319) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:423) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:366) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:946) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:835) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1396) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1386) [catalina.jar:9.0.56]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [?:1.8.0_342]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) [tomcat-util.jar:9.0.56]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134) [?:1.8.0_342]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:919) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:263) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:432) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:927) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:772) [catalina.jar:9.0.56]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_342]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_342]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_342]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_342]
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345) [bootstrap.jar:9.0.56]
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476) [bootstrap.jar:9.0.56]
+2025-04-30 11:35:25.140 INFO  [main][ModuleFrameworkImpl:1696] Started web bundles
+2025-04-30 11:35:25.140 INFO  [main][ModuleFrameworkImpl:276] Navigate to Control Panel > System > Gogo Shell and enter "lb" to see all bundles
+2025-04-30 11:35:25.147 ERROR [fileinstall-directory-watcher][DirectoryWatcher:1173] Unable to start bundle: file:/opt/liferay/osgi/modules/com.example.govnoray-1.0.0.jar
+com.liferay.portal.kernel.log.LogSanitizerException: org.osgi.framework.BundleException: Could not resolve module: com.example.govnoray [1549]_  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=21))"_ [Sanitized]
+	at org.eclipse.osgi.container.Module.start(Module.java:444) ~[org.eclipse.osgi.jar:?]
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.start(EquinoxBundle.java:428) ~[org.eclipse.osgi.jar:?]
+	at com.liferay.portal.file.install.internal.DirectoryWatcher._startBundle(DirectoryWatcher.java:1156) [bundleFile:?]
+	at com.liferay.portal.file.install.internal.DirectoryWatcher._startBundles(DirectoryWatcher.java:1189) [bundleFile:?]
+	at com.liferay.portal.file.install.internal.DirectoryWatcher._startAllBundles(DirectoryWatcher.java:1130) [bundleFile:?]
+	at com.liferay.portal.file.install.internal.DirectoryWatcher._process(DirectoryWatcher.java:1041) [bundleFile:?]
+	at com.liferay.portal.file.install.internal.DirectoryWatcher.run(DirectoryWatcher.java:221) [bundleFile:?]
+2025-04-30 11:35:26.290 WARN  [main][SidecarManager:103] Liferay automatically starts a child process of Elasticsearch named sidecar for convenient development and demonstration purposes. Do NOT use sidecar in production. Refer to the documentation for details on the limitations of sidecar and instructions on configuring a remote Elasticsearch connection in the Control Panel.
+2025-04-30 11:35:33.015 INFO  [main][Sidecar:119] Sidecar Elasticsearch liferay started at 127.0.0.1:9201
+2025-04-30 11:35:35.487 INFO  [main][StartupHelperUtil:86] There are no patches installed
+2025-04-30 11:35:35.561 INFO  [main][LoggingTimer:83] Starting com.liferay.portal.events.StartupHelperUtil#initResourceActions
+2025-04-30 11:35:35.571 INFO  [main][LoggingTimer:44] Completed com.liferay.portal.events.StartupHelperUtil#initResourceActions in 10 ms
+2025-04-30 11:35:35.860 INFO  [main][AutoDeployDir:176] Auto deploy scanner started for /opt/liferay/deploy
+2025-04-30 11:35:40.549 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][ThemeHotDeployListener:108] 1 theme for admin-theme is available for use
+2025-04-30 11:35:40.621 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][ThemeHotDeployListener:108] 1 theme for speedwell-theme is available for use
+2025-04-30 11:35:40.677 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][ThemeHotDeployListener:108] 1 theme for dialect-theme is available for use
+2025-04-30 11:35:40.732 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][ThemeHotDeployListener:108] 1 theme for minium-theme is available for use
+2025-04-30 11:35:40.783 INFO  [com.liferay.portal.osgi.web.wab.extender.internal.WabFactory-BundleTrackerOpener][ThemeHotDeployListener:108] 1 theme for classic-theme is available for use
+2025-04-30 11:35:51.128 WARN  [http-nio-8080-exec-3][code_jsp:159] {code="404", msg="ProxyServlet: /polnoe_govno/index.html", uri=/o/polnoe_govno/index.html}
+2025-04-30 11:37:49.846 INFO  [main][PortalContextLoaderListener:123] JVM arguments: -Djava.util.logging.config.file=/opt/liferay/tomcat/conf/logging.properties -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager -Djdk.tls.ephemeralDHKeySize=2048 -Djava.protocol.handler.pkgs=org.apache.catalina.webresources -Dorg.apache.catalina.security.SecurityListener.UMASK=0027 -Dfile.encoding=UTF-8 -Djava.locale.providers=JRE,COMPAT,CLDR -Djava.net.preferIPv4Stack=true -Duser.timezone=GMT -Xms2560m -Xmx2560m -XX:MaxNewSize=1536m -XX:MaxMetaspaceSize=768m -XX:MetaspaceSize=768m -XX:NewSize=1536m -XX:SurvivorRatio=7 -Dignore.endorsed.dirs= -Dcatalina.base=/opt/liferay/tomcat -Dcatalina.home=/opt/liferay/tomcat -Djava.io.tmpdir=/opt/liferay/tomcat/temp
+2025-04-30 11:37:59.432 ERROR [main][PortalContextLoaderListener:79] null
+java.lang.NullPointerException: null
+	at com.liferay.portal.kernel.servlet.DirectServletRegistryUtil.clearServlets(DirectServletRegistryUtil.java:25) ~[portal-kernel.jar:?]
+	at com.liferay.portal.spring.context.PortalContextLoaderListener.contextDestroyed(PortalContextLoaderListener.java:129) [portal-impl.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_342]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_342]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_342]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_342]
+	at com.liferay.shielded.container.internal.proxy.ContextClassLoaderInvocationHandler.invoke(ContextClassLoaderInvocationHandler.java:43) [com.liferay.shielded.container.impl.jar:?]
+	at com.liferay.shielded.container.internal.proxy.EventListenerInvocationHandler.invoke(EventListenerInvocationHandler.java:64) [com.liferay.shielded.container.impl.jar:?]
+	at com.sun.proxy.$Proxy6.contextDestroyed(Unknown Source) [?:?]
+	at org.apache.catalina.core.StandardContext.listenerStop(StandardContext.java:4814) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5477) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:187) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:726) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:698) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:696) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:690) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1889) [catalina.jar:9.0.56]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [?:1.8.0_342]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [?:1.8.0_342]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) [tomcat-util.jar:9.0.56]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:112) [?:1.8.0_342]
+	at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:583) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:473) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1618) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:319) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:423) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:366) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:946) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:835) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1396) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1386) [catalina.jar:9.0.56]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [?:1.8.0_342]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) [tomcat-util.jar:9.0.56]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134) [?:1.8.0_342]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:919) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:263) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:432) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:927) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:772) [catalina.jar:9.0.56]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_342]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_342]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_342]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_342]
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345) [bootstrap.jar:9.0.56]
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476) [bootstrap.jar:9.0.56]
+2025-04-30 11:37:59.436 ERROR [main][PortalContextLoaderListener:79] null
+java.lang.NullPointerException: null
+	at com.liferay.portal.kernel.deploy.hot.HotDeployUtil.reset(HotDeployUtil.java:50) ~[portal-kernel.jar:?]
+	at com.liferay.portal.spring.context.PortalContextLoaderListener.contextDestroyed(PortalContextLoaderListener.java:136) [portal-impl.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_342]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_342]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_342]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_342]
+	at com.liferay.shielded.container.internal.proxy.ContextClassLoaderInvocationHandler.invoke(ContextClassLoaderInvocationHandler.java:43) [com.liferay.shielded.container.impl.jar:?]
+	at com.liferay.shielded.container.internal.proxy.EventListenerInvocationHandler.invoke(EventListenerInvocationHandler.java:64) [com.liferay.shielded.container.impl.jar:?]
+	at com.sun.proxy.$Proxy6.contextDestroyed(Unknown Source) [?:?]
+	at org.apache.catalina.core.StandardContext.listenerStop(StandardContext.java:4814) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5477) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:187) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:726) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:698) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:696) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:690) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1889) [catalina.jar:9.0.56]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [?:1.8.0_342]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [?:1.8.0_342]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) [tomcat-util.jar:9.0.56]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:112) [?:1.8.0_342]
+	at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:583) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:473) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1618) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:319) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:423) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:366) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:946) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:835) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1396) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1386) [catalina.jar:9.0.56]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [?:1.8.0_342]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) [tomcat-util.jar:9.0.56]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134) [?:1.8.0_342]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:919) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:263) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:432) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:927) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:772) [catalina.jar:9.0.56]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_342]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_342]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_342]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_342]
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345) [bootstrap.jar:9.0.56]
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476) [bootstrap.jar:9.0.56]
+2025-04-30 11:37:59.438 ERROR [main][PortalBeanLocatorUtil:66] BeanLocator is null
+2025-04-30 11:40:45.011 INFO  [main][PortalContextLoaderListener:123] JVM arguments: -Djava.util.logging.config.file=/opt/liferay/tomcat/conf/logging.properties -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager -Djdk.tls.ephemeralDHKeySize=2048 -Djava.protocol.handler.pkgs=org.apache.catalina.webresources -Dorg.apache.catalina.security.SecurityListener.UMASK=0027 -Dfile.encoding=UTF-8 -Djava.locale.providers=JRE,COMPAT,CLDR -Djava.net.preferIPv4Stack=true -Duser.timezone=GMT -Xms2560m -Xmx2560m -XX:MaxNewSize=1536m -XX:MaxMetaspaceSize=768m -XX:MetaspaceSize=768m -XX:NewSize=1536m -XX:SurvivorRatio=7 -Dignore.endorsed.dirs= -Dcatalina.base=/opt/liferay/tomcat -Dcatalina.home=/opt/liferay/tomcat -Djava.io.tmpdir=/opt/liferay/tomcat/temp
+2025-04-30 11:40:47.402 ERROR [main][PortalContextLoaderListener:79] null
+java.lang.NullPointerException: null
+	at com.liferay.portal.kernel.servlet.DirectServletRegistryUtil.clearServlets(DirectServletRegistryUtil.java:25) ~[portal-kernel.jar:?]
+	at com.liferay.portal.spring.context.PortalContextLoaderListener.contextDestroyed(PortalContextLoaderListener.java:129) [portal-impl.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_342]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_342]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_342]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_342]
+	at com.liferay.shielded.container.internal.proxy.ContextClassLoaderInvocationHandler.invoke(ContextClassLoaderInvocationHandler.java:43) [com.liferay.shielded.container.impl.jar:?]
+	at com.liferay.shielded.container.internal.proxy.EventListenerInvocationHandler.invoke(EventListenerInvocationHandler.java:64) [com.liferay.shielded.container.impl.jar:?]
+	at com.sun.proxy.$Proxy6.contextDestroyed(Unknown Source) [?:?]
+	at org.apache.catalina.core.StandardContext.listenerStop(StandardContext.java:4814) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5477) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:187) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:726) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:698) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:696) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:690) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1889) [catalina.jar:9.0.56]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [?:1.8.0_342]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [?:1.8.0_342]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) [tomcat-util.jar:9.0.56]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:112) [?:1.8.0_342]
+	at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:583) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:473) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1618) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:319) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:423) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:366) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:946) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:835) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1396) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1386) [catalina.jar:9.0.56]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [?:1.8.0_342]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) [tomcat-util.jar:9.0.56]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134) [?:1.8.0_342]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:919) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:263) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:432) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:927) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:772) [catalina.jar:9.0.56]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_342]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_342]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_342]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_342]
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345) [bootstrap.jar:9.0.56]
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476) [bootstrap.jar:9.0.56]
+2025-04-30 11:40:47.407 ERROR [main][PortalContextLoaderListener:79] null
+java.lang.NullPointerException: null
+	at com.liferay.portal.kernel.deploy.hot.HotDeployUtil.reset(HotDeployUtil.java:50) ~[portal-kernel.jar:?]
+	at com.liferay.portal.spring.context.PortalContextLoaderListener.contextDestroyed(PortalContextLoaderListener.java:136) [portal-impl.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_342]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_342]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_342]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_342]
+	at com.liferay.shielded.container.internal.proxy.ContextClassLoaderInvocationHandler.invoke(ContextClassLoaderInvocationHandler.java:43) [com.liferay.shielded.container.impl.jar:?]
+	at com.liferay.shielded.container.internal.proxy.EventListenerInvocationHandler.invoke(EventListenerInvocationHandler.java:64) [com.liferay.shielded.container.impl.jar:?]
+	at com.sun.proxy.$Proxy6.contextDestroyed(Unknown Source) [?:?]
+	at org.apache.catalina.core.StandardContext.listenerStop(StandardContext.java:4814) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5477) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:187) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:726) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:698) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:696) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:690) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1889) [catalina.jar:9.0.56]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [?:1.8.0_342]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [?:1.8.0_342]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) [tomcat-util.jar:9.0.56]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:112) [?:1.8.0_342]
+	at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:583) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:473) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1618) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:319) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:423) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:366) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:946) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:835) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1396) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1386) [catalina.jar:9.0.56]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [?:1.8.0_342]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) [tomcat-util.jar:9.0.56]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134) [?:1.8.0_342]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:919) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:263) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:432) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:927) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:772) [catalina.jar:9.0.56]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_342]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_342]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_342]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_342]
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345) [bootstrap.jar:9.0.56]
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476) [bootstrap.jar:9.0.56]
+2025-04-30 11:40:47.409 ERROR [main][PortalBeanLocatorUtil:66] BeanLocator is null
+2025-04-30 11:41:12.383 INFO  [main][PortalContextLoaderListener:123] JVM arguments: -Djava.util.logging.config.file=/opt/liferay/tomcat/conf/logging.properties -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager -Djdk.tls.ephemeralDHKeySize=2048 -Djava.protocol.handler.pkgs=org.apache.catalina.webresources -Dorg.apache.catalina.security.SecurityListener.UMASK=0027 -Dfile.encoding=UTF-8 -Djava.locale.providers=JRE,COMPAT,CLDR -Djava.net.preferIPv4Stack=true -Duser.timezone=GMT -Xms2560m -Xmx2560m -XX:MaxNewSize=1536m -XX:MaxMetaspaceSize=768m -XX:MetaspaceSize=768m -XX:NewSize=1536m -XX:SurvivorRatio=7 -Dignore.endorsed.dirs= -Dcatalina.base=/opt/liferay/tomcat -Dcatalina.home=/opt/liferay/tomcat -Djava.io.tmpdir=/opt/liferay/tomcat/temp
+2025-04-30 11:41:14.716 ERROR [main][PortalContextLoaderListener:79] null
+java.lang.NullPointerException: null
+	at com.liferay.portal.kernel.servlet.DirectServletRegistryUtil.clearServlets(DirectServletRegistryUtil.java:25) ~[portal-kernel.jar:?]
+	at com.liferay.portal.spring.context.PortalContextLoaderListener.contextDestroyed(PortalContextLoaderListener.java:129) [portal-impl.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_342]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_342]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_342]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_342]
+	at com.liferay.shielded.container.internal.proxy.ContextClassLoaderInvocationHandler.invoke(ContextClassLoaderInvocationHandler.java:43) [com.liferay.shielded.container.impl.jar:?]
+	at com.liferay.shielded.container.internal.proxy.EventListenerInvocationHandler.invoke(EventListenerInvocationHandler.java:64) [com.liferay.shielded.container.impl.jar:?]
+	at com.sun.proxy.$Proxy6.contextDestroyed(Unknown Source) [?:?]
+	at org.apache.catalina.core.StandardContext.listenerStop(StandardContext.java:4814) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5477) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:187) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:726) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:698) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:696) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:690) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1889) [catalina.jar:9.0.56]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [?:1.8.0_342]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [?:1.8.0_342]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) [tomcat-util.jar:9.0.56]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:112) [?:1.8.0_342]
+	at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:583) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:473) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1618) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:319) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:423) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:366) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:946) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:835) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1396) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1386) [catalina.jar:9.0.56]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [?:1.8.0_342]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) [tomcat-util.jar:9.0.56]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134) [?:1.8.0_342]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:919) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:263) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:432) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:927) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:772) [catalina.jar:9.0.56]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_342]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_342]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_342]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_342]
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345) [bootstrap.jar:9.0.56]
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476) [bootstrap.jar:9.0.56]
+2025-04-30 11:41:14.720 ERROR [main][PortalContextLoaderListener:79] null
+java.lang.NullPointerException: null
+	at com.liferay.portal.kernel.deploy.hot.HotDeployUtil.reset(HotDeployUtil.java:50) ~[portal-kernel.jar:?]
+	at com.liferay.portal.spring.context.PortalContextLoaderListener.contextDestroyed(PortalContextLoaderListener.java:136) [portal-impl.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_342]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_342]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_342]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_342]
+	at com.liferay.shielded.container.internal.proxy.ContextClassLoaderInvocationHandler.invoke(ContextClassLoaderInvocationHandler.java:43) [com.liferay.shielded.container.impl.jar:?]
+	at com.liferay.shielded.container.internal.proxy.EventListenerInvocationHandler.invoke(EventListenerInvocationHandler.java:64) [com.liferay.shielded.container.impl.jar:?]
+	at com.sun.proxy.$Proxy6.contextDestroyed(Unknown Source) [?:?]
+	at org.apache.catalina.core.StandardContext.listenerStop(StandardContext.java:4814) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5477) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:187) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:726) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:698) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:696) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:690) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1889) [catalina.jar:9.0.56]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [?:1.8.0_342]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [?:1.8.0_342]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) [tomcat-util.jar:9.0.56]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:112) [?:1.8.0_342]
+	at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:583) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:473) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1618) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:319) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:423) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:366) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:946) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:835) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1396) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1386) [catalina.jar:9.0.56]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [?:1.8.0_342]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) [tomcat-util.jar:9.0.56]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134) [?:1.8.0_342]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:919) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:263) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:432) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:927) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:772) [catalina.jar:9.0.56]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_342]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_342]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_342]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_342]
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345) [bootstrap.jar:9.0.56]
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476) [bootstrap.jar:9.0.56]
+2025-04-30 11:41:14.721 ERROR [main][PortalBeanLocatorUtil:66] BeanLocator is null
+2025-04-30 11:43:09.728 INFO  [main][PortalContextLoaderListener:123] JVM arguments: -Djava.util.logging.config.file=/opt/liferay/tomcat/conf/logging.properties -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager -Djdk.tls.ephemeralDHKeySize=2048 -Djava.protocol.handler.pkgs=org.apache.catalina.webresources -Dorg.apache.catalina.security.SecurityListener.UMASK=0027 -Dfile.encoding=UTF-8 -Djava.locale.providers=JRE,COMPAT,CLDR -Djava.net.preferIPv4Stack=true -Duser.timezone=GMT -Xms2560m -Xmx2560m -XX:MaxNewSize=1536m -XX:MaxMetaspaceSize=768m -XX:MetaspaceSize=768m -XX:NewSize=1536m -XX:SurvivorRatio=7 -Dignore.endorsed.dirs= -Dcatalina.base=/opt/liferay/tomcat -Dcatalina.home=/opt/liferay/tomcat -Djava.io.tmpdir=/opt/liferay/tomcat/temp
+2025-04-30 11:43:18.859 ERROR [main][PortalContextLoaderListener:79] null
+java.lang.NullPointerException: null
+	at com.liferay.portal.kernel.servlet.DirectServletRegistryUtil.clearServlets(DirectServletRegistryUtil.java:25) ~[portal-kernel.jar:?]
+	at com.liferay.portal.spring.context.PortalContextLoaderListener.contextDestroyed(PortalContextLoaderListener.java:129) [portal-impl.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_342]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_342]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_342]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_342]
+	at com.liferay.shielded.container.internal.proxy.ContextClassLoaderInvocationHandler.invoke(ContextClassLoaderInvocationHandler.java:43) [com.liferay.shielded.container.impl.jar:?]
+	at com.liferay.shielded.container.internal.proxy.EventListenerInvocationHandler.invoke(EventListenerInvocationHandler.java:64) [com.liferay.shielded.container.impl.jar:?]
+	at com.sun.proxy.$Proxy6.contextDestroyed(Unknown Source) [?:?]
+	at org.apache.catalina.core.StandardContext.listenerStop(StandardContext.java:4814) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5477) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:187) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:726) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:698) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:696) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:690) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1889) [catalina.jar:9.0.56]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [?:1.8.0_342]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [?:1.8.0_342]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) [tomcat-util.jar:9.0.56]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:112) [?:1.8.0_342]
+	at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:583) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:473) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1618) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:319) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:423) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:366) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:946) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:835) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1396) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1386) [catalina.jar:9.0.56]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [?:1.8.0_342]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) [tomcat-util.jar:9.0.56]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134) [?:1.8.0_342]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:919) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:263) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:432) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:927) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:772) [catalina.jar:9.0.56]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_342]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_342]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_342]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_342]
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345) [bootstrap.jar:9.0.56]
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476) [bootstrap.jar:9.0.56]
+2025-04-30 11:43:18.862 ERROR [main][PortalContextLoaderListener:79] null
+java.lang.NullPointerException: null
+	at com.liferay.portal.kernel.deploy.hot.HotDeployUtil.reset(HotDeployUtil.java:50) ~[portal-kernel.jar:?]
+	at com.liferay.portal.spring.context.PortalContextLoaderListener.contextDestroyed(PortalContextLoaderListener.java:136) [portal-impl.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_342]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_342]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_342]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_342]
+	at com.liferay.shielded.container.internal.proxy.ContextClassLoaderInvocationHandler.invoke(ContextClassLoaderInvocationHandler.java:43) [com.liferay.shielded.container.impl.jar:?]
+	at com.liferay.shielded.container.internal.proxy.EventListenerInvocationHandler.invoke(EventListenerInvocationHandler.java:64) [com.liferay.shielded.container.impl.jar:?]
+	at com.sun.proxy.$Proxy6.contextDestroyed(Unknown Source) [?:?]
+	at org.apache.catalina.core.StandardContext.listenerStop(StandardContext.java:4814) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5477) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:187) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:726) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:698) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:696) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:690) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1889) [catalina.jar:9.0.56]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [?:1.8.0_342]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [?:1.8.0_342]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) [tomcat-util.jar:9.0.56]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:112) [?:1.8.0_342]
+	at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:583) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:473) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1618) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:319) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:423) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:366) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:946) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:835) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1396) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1386) [catalina.jar:9.0.56]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [?:1.8.0_342]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) [tomcat-util.jar:9.0.56]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134) [?:1.8.0_342]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:919) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:263) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:432) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:927) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:772) [catalina.jar:9.0.56]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_342]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_342]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_342]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_342]
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345) [bootstrap.jar:9.0.56]
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476) [bootstrap.jar:9.0.56]
+2025-04-30 11:43:18.864 ERROR [main][PortalBeanLocatorUtil:66] BeanLocator is null
+2025-04-30 11:57:14.264 INFO  [main][PortalContextLoaderListener:123] JVM arguments: -Djava.util.logging.config.file=/opt/liferay/tomcat/conf/logging.properties -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager -Djdk.tls.ephemeralDHKeySize=2048 -Djava.protocol.handler.pkgs=org.apache.catalina.webresources -Dorg.apache.catalina.security.SecurityListener.UMASK=0027 -Dfile.encoding=UTF-8 -Djava.locale.providers=JRE,COMPAT,CLDR -Djava.net.preferIPv4Stack=true -Duser.timezone=GMT -Xms2560m -Xmx2560m -XX:MaxNewSize=1536m -XX:MaxMetaspaceSize=768m -XX:MetaspaceSize=768m -XX:NewSize=1536m -XX:SurvivorRatio=7 -Dignore.endorsed.dirs= -Dcatalina.base=/opt/liferay/tomcat -Dcatalina.home=/opt/liferay/tomcat -Djava.io.tmpdir=/opt/liferay/tomcat/temp
+2025-04-30 11:57:23.638 ERROR [main][PortalContextLoaderListener:79] null
+java.lang.NullPointerException: null
+	at com.liferay.portal.kernel.servlet.DirectServletRegistryUtil.clearServlets(DirectServletRegistryUtil.java:25) ~[portal-kernel.jar:?]
+	at com.liferay.portal.spring.context.PortalContextLoaderListener.contextDestroyed(PortalContextLoaderListener.java:129) [portal-impl.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_342]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_342]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_342]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_342]
+	at com.liferay.shielded.container.internal.proxy.ContextClassLoaderInvocationHandler.invoke(ContextClassLoaderInvocationHandler.java:43) [com.liferay.shielded.container.impl.jar:?]
+	at com.liferay.shielded.container.internal.proxy.EventListenerInvocationHandler.invoke(EventListenerInvocationHandler.java:64) [com.liferay.shielded.container.impl.jar:?]
+	at com.sun.proxy.$Proxy6.contextDestroyed(Unknown Source) [?:?]
+	at org.apache.catalina.core.StandardContext.listenerStop(StandardContext.java:4814) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5477) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:187) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:726) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:698) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:696) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:690) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1889) [catalina.jar:9.0.56]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [?:1.8.0_342]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [?:1.8.0_342]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) [tomcat-util.jar:9.0.56]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:112) [?:1.8.0_342]
+	at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:583) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:473) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1618) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:319) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:423) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:366) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:946) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:835) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1396) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1386) [catalina.jar:9.0.56]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [?:1.8.0_342]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) [tomcat-util.jar:9.0.56]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134) [?:1.8.0_342]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:919) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:263) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:432) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:927) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:772) [catalina.jar:9.0.56]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_342]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_342]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_342]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_342]
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345) [bootstrap.jar:9.0.56]
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476) [bootstrap.jar:9.0.56]
+2025-04-30 11:57:23.642 ERROR [main][PortalContextLoaderListener:79] null
+java.lang.NullPointerException: null
+	at com.liferay.portal.kernel.deploy.hot.HotDeployUtil.reset(HotDeployUtil.java:50) ~[portal-kernel.jar:?]
+	at com.liferay.portal.spring.context.PortalContextLoaderListener.contextDestroyed(PortalContextLoaderListener.java:136) [portal-impl.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_342]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_342]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_342]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_342]
+	at com.liferay.shielded.container.internal.proxy.ContextClassLoaderInvocationHandler.invoke(ContextClassLoaderInvocationHandler.java:43) [com.liferay.shielded.container.impl.jar:?]
+	at com.liferay.shielded.container.internal.proxy.EventListenerInvocationHandler.invoke(EventListenerInvocationHandler.java:64) [com.liferay.shielded.container.impl.jar:?]
+	at com.sun.proxy.$Proxy6.contextDestroyed(Unknown Source) [?:?]
+	at org.apache.catalina.core.StandardContext.listenerStop(StandardContext.java:4814) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5477) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:187) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:726) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:698) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:696) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:690) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1889) [catalina.jar:9.0.56]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [?:1.8.0_342]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [?:1.8.0_342]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) [tomcat-util.jar:9.0.56]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:112) [?:1.8.0_342]
+	at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:583) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:473) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1618) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:319) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:423) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:366) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:946) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:835) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1396) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1386) [catalina.jar:9.0.56]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [?:1.8.0_342]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) [tomcat-util.jar:9.0.56]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134) [?:1.8.0_342]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:919) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:263) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:432) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.56]
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:927) [catalina.jar:9.0.56]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) [catalina.jar:9.0.56]
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:772) [catalina.jar:9.0.56]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_342]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_342]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_342]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_342]
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345) [bootstrap.jar:9.0.56]
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476) [bootstrap.jar:9.0.56]
+2025-04-30 11:57:23.644 ERROR [main][PortalBeanLocatorUtil:66] BeanLocator is null

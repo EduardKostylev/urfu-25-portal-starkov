@@ -1,0 +1,23 @@
+buildscript {
+	dependencies {
+		classpath group: "com.liferay", name: "com.liferay.gradle.plugins.workspace", version: "12.1.11"
+	}
+
+	repositories {
+		mavenLocal()
+
+		maven {
+			url "https://repository-cdn.liferay.com/nexus/content/groups/public"
+		}
+	}
+}
+
+apply plugin: "com.liferay.workspace"
+include 'modules:govnoray-portlet', 'modules:govnoray-theme', 'modules:my-mvc-portlet'
+
+
+
+
+
+//cp -r home/travlya/urfu-25-portal-starkov-main/client/public/* govnoray-portlet/src/main/resources/META-INF/resources/
+//cp -r client/src/* govnoray-portlet/src/main/resources/META-INF/resources/

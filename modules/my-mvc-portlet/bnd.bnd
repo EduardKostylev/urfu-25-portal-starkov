@@ -1,0 +1,7 @@
+Bundle-Name: my-mvc-portlet
+Bundle-SymbolicName: com.example.my.app
+Bundle-Version: 1.0.0
+Export-Package: com.example.my.app.constants
+Provide-Capability:\
+	liferay.language.resources;\
+		resource.bundle.base.name="content.Language"
